@@ -1,2 +1,3 @@
-# ghost-v4-on-heroku
-Deploy the latest ghost v4 on Heroku
+### Deploy
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
