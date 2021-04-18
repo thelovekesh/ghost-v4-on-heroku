@@ -1,0 +1,37 @@
+{
+  "name": "Ghost V4 on Heroku",
+  "description": "Deploy latest Ghost v4 on Heroku",
+  "logo": "https://ghost.org/images/docs/logos/ghost-logo-dark.png",
+  "repository": "https://github.com/thelovekesh/ghost-v4-on-heroku",
+  "scripts": {
+    "postdeploy": "bin/init-deployment"
+  },
+  "success_url": "/ghost",
+  "addons": ["jawsdb", "mailgun", "cloudinary"],
+  "env": {
+    "APP_PUBLIC_URL": {
+      "description": "Complete URL of your app including https (You can change it later in Config Vars)",
+      "value": "https://YOURAPPNAME.herokuapp.com"
+    },
+    "S3_ACCESS_KEY_ID": {
+      "description": "(Optional) Set your AWS Access Key ID to enable S3 file storage. Defaults to Cloudinary storage",
+      "required": false
+    },
+    "S3_ACCESS_SECRET_KEY": {
+      "description": "AWS Access Secret Key, if using S3 file storage.",
+      "required": false
+    },
+    "S3_BUCKET_NAME": {
+      "description": "Name of your S3 bucket on AWS, if using S3 file storage.",
+      "required": false
+    },
+    "S3_BUCKET_REGION": {
+      "description": "Region of your S3 bucket on AWS, if using S3 file storage.",
+      "required": false
+    },
+    "S3_ASSET_HOST_URL": {
+      "description": "Optional custom CDN asset host url, if using S3 file storage.",
+      "required": false
+    }
+  }
+}

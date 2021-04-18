@@ -1,0 +1,36 @@
+{
+  "name": "ghost-v4-on-heroku",
+  "version": "4.2.2",
+  "description": "Deploy latest ghost v4 on Heroku",
+  "main": "thelovekesh.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelovekesh/ghost-v4-on-heroku.git"
+  },
+  "keywords": [
+    "ghost",
+    "ghost v4",
+    "heroku"
+  ],
+  "author": "thelovekesh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thelovekesh/ghost-v4-on-heroku/issues"
+  },
+  "homepage": "https://github.com/thelovekesh/ghost-v4-on-heroku#readme",
+  "engines": {
+    "node": "12.X"
+  },
+  "dependencies": {
+    "casper": "github:TryGhost/Casper#main",
+    "ghost": "^4.2.2",
+    "ghost-storage-adapter-s3": "^2.8.0",
+    "ghost-storage-cloudinary": "^2.1.5",
+    "lyra": "github:TryGhost/lyra#master",
+    "mysql": "^2.18.1"
+  },
+  "scripts": {
+    "start": "node thelovekesh.js",
+    "postinstall": "bash bin/cloudinary.sh && bash bin/aws-s3.sh && bash bin/themes.sh"
+  }
+}
