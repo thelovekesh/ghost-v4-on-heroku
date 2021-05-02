@@ -26,6 +26,7 @@ function createConfig() {
   } else if (!!process.env.CLOUDINARY_URL) {
     fileStorage = true;
     storage = {
+      active: "cloudinary",
       cloudinary: {
         useDatedFolder: false,
         upload: {
