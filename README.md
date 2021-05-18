@@ -6,6 +6,9 @@ You can visit the project's website at <a href="https://ghost.org/" target="_bla
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+> I am available to work with individuals or companies who are looking to build their blazingly super-fast publishing platform. [Contact-Me](https://bit.ly/getfastblog)
+
+
 If the above button does not work for you, disable anything that might be blocking Heroku from inferring the referrer (e.g. Brave shield), or try this: https://heroku.com/deploy?template=https://github.com/thelovekesh/ghost-v4-on-heroku (if you're using a fork, make sure to point the template link to your repo).
 
 **NOTE**: we do _not_ support deploying by downloading the source file or by copying over a cloned folder. Downloading/copying folders tends to break symlinks, so we recommend that you deploy by clicking the button in this repository or your fork on GitHub.
