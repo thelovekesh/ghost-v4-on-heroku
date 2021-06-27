@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
-    "ghost": "^4.6.4",
+    "ghost": "^4.8.3",
     "ghost-storage-adapter-s3": "^2.8.0",
     "ghost-storage-cloudinary": "^2.1.5",
     "lyra": "github:TryGhost/lyra#master",
