@@ -27,7 +27,7 @@
     "ghost-storage-adapter-s3": "^2.8.0",
     "ghost-storage-cloudinary": "^2.1.5",
     "lyra": "github:TryGhost/lyra#main",
-    "simply-master": "github:nandoligeiro/simply#master",
+    "simply-master": "github:nandoligeiro/simply#ghost4Sara",
     "mysql": "^2.18.1"
   },
   "scripts": {
