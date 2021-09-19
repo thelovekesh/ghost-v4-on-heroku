@@ -1,6 +1,7 @@
 themes=(
 	casper
 	lyra
+	simply-master
 )
 
 for theme in "${themes[@]}"
