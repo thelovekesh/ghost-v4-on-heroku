@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/thelovekesh/ghost-v4-on-heroku#readme",
   "engines": {
-    "node": "12.X"
+    "node": "14.X"
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
