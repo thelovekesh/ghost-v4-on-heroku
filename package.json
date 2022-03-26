@@ -1,6 +1,6 @@
 {
   "name": "ghost-v4-on-heroku",
-  "version": "4.36.2",
+  "version": "4.41.3",
   "description": "Deploy latest ghost v4 on Heroku",
   "main": "thelovekesh.js",
   "repository": {
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
-    "ghost": "^4.36.0",
+    "ghost": "^4.41.3",
     "ghost-storage-adapter-s3": "^2.8.0",
     "ghost-storage-cloudinary": "^2.1.5",
     "lyra": "github:TryGhost/lyra#main",
