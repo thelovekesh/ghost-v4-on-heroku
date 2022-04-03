@@ -25,7 +25,7 @@
     "casper": "github:TryGhost/Casper#main",
     "ghost": "^4.41.3",
     "ghost-storage-adapter-s3": "^2.8.0",
-    "ghost-storage-cloudinary": "^2.1.5",
+    "ghost-storage-cloudinary": "^2.2.1",
     "lyra": "github:TryGhost/lyra#main",
     "mysql": "^2.18.1"
   },
