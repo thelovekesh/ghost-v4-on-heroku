@@ -1,6 +1,6 @@
 {
   "name": "ghost-v4-on-heroku",
-  "version": "4.47.4",
+  "version": "4.48.0",
   "description": "Deploy latest ghost v4 on Heroku",
   "main": "thelovekesh.js",
   "repository": {
