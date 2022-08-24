@@ -1,0 +1,100 @@
+{
+    "name": "headline",
+    "description": "A Ghost theme",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+        "ghost": ">=5.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Ghost Foundation",
+        "email": "hello@ghost.org",
+        "url": "https://ghost.org"
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "config": {
+        "posts_per_page": 7,
+        "image_sizes": {
+            "xs": {
+                "width": 150
+            },
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 720
+            },
+            "l": {
+                "width": 960
+            },
+            "xl": {
+                "width": 1200
+            },
+            "xxl": {
+                "width": 2000
+            }
+        },
+        "card_assets": true,
+        "custom": {
+            "title_font": {
+                "type": "select",
+                "options": ["Modern sans-serif", "Elegant serif"],
+                "default": "Modern sans-serif"
+            },
+            "body_font": {
+                "type": "select",
+                "options": ["Modern sans-serif", "Elegant serif"],
+                "default": "Elegant serif"
+            },
+            "header_style": {
+                "type": "select",
+                "options": ["Light", "Accent color", "Dark"],
+                "default": "Light"
+            },
+            "white_publication_logo_for_transparent_header": {
+                "type": "image"
+            },
+            "email_signup_text": {
+                "type": "text",
+                "default": "Don't miss out on the latest news. Sign up now to get access to the library of members-only articles."
+            },
+            "footer_text": {
+                "type": "text"
+            },
+            "enter_tag_slugs_for_primary_sections": {
+                "type": "text",
+                "group": "homepage"
+            },
+            "enter_tag_slugs_for_secondary_sections": {
+                "type": "text",
+                "group": "homepage"
+            }
+        }
+    },
+    "scripts": {
+        "dev": "gulp",
+        "test": "gscan .",
+        "zip": "gulp zip"
+    },
+    "devDependencies": {
+        "@tryghost/shared-theme-assets": "1.1.0",
+        "autoprefixer": "10.4.8",
+        "beeper": "2.1.0",
+        "cssnano": "5.1.13",
+        "gscan": "4.34.0",
+        "gulp": "4.0.2",
+        "gulp-concat": "2.6.1",
+        "gulp-livereload": "4.0.2",
+        "gulp-postcss": "9.0.1",
+        "gulp-uglify": "3.0.2",
+        "gulp-zip": "5.1.0",
+        "postcss": "8.4.16",
+        "postcss-easy-import": "4.0.0",
+        "pump": "3.0.0"
+    }
+}

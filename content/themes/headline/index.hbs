@@ -1,0 +1,19 @@
+{{!< default}}
+
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        <section class="gh-pagehead">
+            <h1 class="gh-pagehead-title">Latest</h1>
+        </section>
+
+        {{#get "posts" include="authors" limit="all"}}
+            <div class="gh-topic gh-topic-grid">
+                <div class="gh-topic-content">
+                    {{#foreach posts}}
+                        {{> "loop-grid"}}
+                    {{/foreach}}
+                </div>
+            </div>
+        {{/get}}
+    </div>
+</main>

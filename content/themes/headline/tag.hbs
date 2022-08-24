@@ -1,0 +1,51 @@
+{{!< default}}
+
+{{#tag}}
+    {{#if feature_image}}
+        <section class="gh-cover gh-outer">
+            <img
+                class="gh-cover-image"
+                srcset="{{img_url feature_image size="s"}} 300w,
+                        {{img_url feature_image size="m"}} 720w,
+                        {{img_url feature_image size="l"}} 960w,
+                        {{img_url feature_image size="xl"}} 1200w,
+                        {{img_url feature_image size="xxl"}} 2000w"
+                sizes="100vw"
+                src="{{img_url feature_image size="xl"}}"
+                alt="{{name}}"
+            >
+
+            <div class="gh-cover-content">
+                <h1 class="gh-cover-title">{{name}}</h1>
+
+                {{#if description}}
+                    <p class="gh-cover-description">{{description}}</p>
+                {{/if}}
+            </div>
+        </section>
+    {{/if}}
+{{/tag}}
+
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        {{#tag}}
+            {{#unless feature_image}}
+                <section class="gh-pagehead">
+                    <h1 class="gh-pagehead-title">{{name}}</h1>
+
+                    {{#if description}}
+                        <div class="gh-pagehead-description">{{description}}</div>
+                    {{/if}}
+                </section>
+            {{/unless}}
+        {{/tag}}
+
+        <div class="gh-topic gh-topic-grid">
+            <div class="gh-topic-content gh-feed">
+                {{#foreach posts limit="all"}}
+                    {{> "loop-grid"}}
+                {{/foreach}}
+            </div>
+        </div>
+    </div>
+</main>

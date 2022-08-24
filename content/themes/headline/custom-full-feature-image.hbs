@@ -1,0 +1,49 @@
+{{!< default}}
+
+{{#post}}
+    {{#if feature_image}}
+        <section class="gh-cover loading gh-outer">
+            <img
+                class="gh-cover-image"
+                srcset="{{img_url feature_image size="s"}} 300w,
+                        {{img_url feature_image size="m"}} 720w,
+                        {{img_url feature_image size="l"}} 960w,
+                        {{img_url feature_image size="xl"}} 1200w,
+                        {{img_url feature_image size="xxl"}} 2000w"
+                sizes="100vw"
+                src="{{img_url feature_image size="xl"}}"
+                alt="{{name}}"
+            >
+
+            <div class="gh-cover-content">
+                {{#if primary_tag}}
+                    <a class="gh-article-tag" href="{{primary_tag.url}}">{{primary_tag.name}}</a>
+                {{/if}}
+
+                <h1 class="gh-cover-title">{{title}}</h1>
+            </div>
+        </section>
+    {{/if}}
+{{/post}}
+
+<main class="gh-main">
+    {{#post}}
+        <article class="gh-article {{post_class}}">
+            <header class="gh-article-header gh-canvas">
+                {{> "post-meta"}}
+
+                {{#if custom_excerpt}}
+                    <p class="gh-article-excerpt">{{custom_excerpt}}</p>
+                {{/if}}
+            </header>
+
+            <section class="gh-content gh-canvas">
+                {{content}}
+            </section>
+        </article>
+    {{/post}}
+
+    {{> "related-posts"}}
+</main>
+
+{{#contentFor "body_class"}} has-full-image{{#if post.feature_image}} is-head-transparent{{/if}}{{/contentFor}}

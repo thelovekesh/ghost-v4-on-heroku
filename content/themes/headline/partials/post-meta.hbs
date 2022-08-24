@@ -1,0 +1,27 @@
+{{#is "post"}}
+    <aside class="gh-article-sidebar">
+        {{#primary_author}}
+            <figure class="gh-author-image">
+                {{#if profile_image}}
+                    <img src="{{profile_image}}" alt="{{name}}">
+                {{else}}
+                    <div class="gh-author-icon">{{> icons/avatar}}</div>
+                {{/if}}
+            </figure>
+
+            <h4 class="gh-author-name">
+                <a href="{{url}}">{{name}}</a>
+            </h4>
+        {{/primary_author}}
+
+        <div class="gh-article-meta">
+            <div class="gh-article-meta-inner">
+                <time class="gh-article-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+                {{#if reading_time}}
+                    <span class="gh-article-meta-sep"></span>
+                    <span class="gh-article-length">{{reading_time minute="1 min" minutes="% min"}}</span>
+                {{/if}}
+            </div>
+        </div>
+    </aside>
+{{/is}}

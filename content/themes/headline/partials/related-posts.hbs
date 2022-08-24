@@ -1,0 +1,19 @@
+{{#is "post"}}
+    {{#get "posts" include="authors" filter="tags:[{{post.tags}}]+id:-{{post.id}}" limit="3" as |next|}}
+        {{#if next}}
+            <div class="gh-read-next gh-canvas">
+                <section class="gh-pagehead">
+                    <h4 class="gh-pagehead-title">Read next</h4>
+                </section>
+
+                <div class="gh-topic gh-topic-grid">
+                    <div class="gh-topic-content">
+                        {{#foreach next}}
+                            {{> "loop-grid" has_large_post=false}}
+                        {{/foreach}}
+                    </div>
+                </div>
+            </div>
+        {{/if}}
+    {{/get}}
+{{/is}}

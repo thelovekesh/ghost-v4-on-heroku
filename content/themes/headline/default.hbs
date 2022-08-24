@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{meta_title}}</title>
+    <link rel="stylesheet" href="{{asset "built/screen.css"}}">
+
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}{{{block "body_class"}}} {{#if @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}{{#is "tag"}}{{#if tag.feature_image}} is-head-transparent{{/if}}{{/is}}{{#match @custom.header_style "Accent color"}} is-head-brand{{/match}}{{#match @custom.header_style "Dark"}} is-head-dark{{/match}}">
+    <div class="gh-site">
+        <header id="gh-head" class="gh-head gh-outer">
+            <div class="gh-head-inner gh-inner">
+                {{#if @site.description}}
+                    <a class="gh-head-description" href="{{@site.url}}">{{@site.description}}</a>
+                {{/if}}
+
+                <div class="gh-head-brand">
+                    <div class="gh-head-brand-wrapper">
+                        <a class="gh-head-logo" href="{{@site.url}}">
+                            {{#if @site.logo}}
+                                <img src="{{@site.logo}}" alt="{{@site.title}}">
+
+                                {{#if @custom.white_publication_logo_for_transparent_header}}
+                                    <img src="{{@custom.white_publication_logo_for_transparent_header}}" alt="{{@site.title}}">
+                                {{/if}}
+                            {{else}}
+                                {{@site.title}}
+                            {{/if}}
+                        </a>
+                    </div>
+                    <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
+                    <button class="gh-burger"></button>
+                </div>
+
+                <nav class="gh-head-menu">
+                    {{navigation}}
+                </nav>
+
+                <div class="gh-head-actions">
+                    <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
+                    {{#unless @member}}
+                        <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                    {{else}}
+                        <a class="gh-head-btn gh-btn" href="#/portal/account" data-portal="account">Account</a>
+                    {{/unless}}
+                </div>
+            </div>
+        </header>
+
+        {{!-- {{navigation}} --}}
+
+        {{{body}}}
+
+        <footer class="gh-foot gh-outer">
+            <div class="gh-foot-inner gh-inner">
+                {{^if @member.paid}}
+                    <section class="gh-subscribe">
+                        {{^if @member}}
+                            <h4 class="gh-subscribe-title">Subscribe to {{@site.title}}</h3>
+
+                            {{#if @custom.email_signup_text}}
+                                <div class="gh-subscribe-description">{{@custom.email_signup_text}}</div>
+                            {{/if}}
+
+                            <button class="gh-subscribe-btn gh-btn" data-portal="signup">{{> "icons/email"}} Subscribe now</button>
+                        {{else}}
+                            <h3 class="gh-subscribe-title">Ready for unlimited access?</h3>
+
+                            <div class="gh-subscribe-description">Upgrade to a paid account to get full access to all content.</div>
+
+                            <button class="gh-subscribe-btn gh-btn" data-portal="account/plans">Upgrade now</button>
+                        {{/if}}
+                    </section>
+                {{/if}}
+
+                <nav class="gh-foot-menu">
+                    {{navigation type="secondary"}}
+                </nav>
+
+                <div class="gh-copyright">
+                    {{#unless @custom.footer_text}}
+                        {{@site.title}} © {{date format="YYYY"}}. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+                    {{else}}
+                        {{@custom.footer_text}}
+                    {{/unless}}
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    {{#is "post, page"}}
+        {{> "pswp"}}
+    {{/is}}
+
+    <script src="{{asset "built/main.min.js"}}"></script>
+
+    {{ghost_foot}}
+</body>
+
+</html>

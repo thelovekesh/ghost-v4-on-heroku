@@ -1,0 +1,47 @@
+{{!< default}}
+
+<main class="gh-main">
+    {{#post}}
+        <article class="gh-article {{post_class}}">
+            <header class="gh-article-header gh-canvas">
+                {{#if primary_tag}}
+                    <a class="gh-article-tag" href="{{primary_tag.url}}">{{primary_tag.name}}</a>
+                {{/if}}
+
+                <h1 class="gh-article-title">{{title}}</h1>
+
+                {{> "post-meta"}}
+
+                {{#if custom_excerpt}}
+                    <p class="gh-article-excerpt">{{custom_excerpt}}</p>
+                {{/if}}
+
+                {{#if feature_image}}
+                    <figure class="gh-article-image">
+                        <img
+                            srcset="{{img_url feature_image size="s"}} 300w,
+                                    {{img_url feature_image size="m"}} 720w,
+                                    {{img_url feature_image size="l"}} 960w,
+                                    {{img_url feature_image size="xl"}} 1200w,
+                                    {{img_url feature_image size="xxl"}} 2000w"
+                            sizes="(max-width: 1200px) 100vw, 1200px"
+                            src="{{img_url feature_image size="xl"}}"
+                            alt="{{title}}"
+                        >
+                        {{#if feature_image_caption}}
+                            <figcaption>{{feature_image_caption}}</figcaption>
+                        {{/if}}
+                    </figure>
+                {{/if}}
+            </header>
+
+            <section class="gh-content gh-canvas">
+                {{content}}
+            </section>
+        </article>
+    {{/post}}
+
+    {{> "related-posts"}}
+</main>
+
+{{#contentFor "body_class"}} has-wide-image{{/contentFor}}

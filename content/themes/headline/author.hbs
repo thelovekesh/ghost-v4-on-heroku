@@ -1,0 +1,33 @@
+{{!< default}}
+
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        {{#author}}
+            <section class="gh-pagehead">
+                <figure class="gh-author-image">
+                    {{#if profile_image}}
+                        <img src="{{profile_image}}" alt="{{name}}">
+                    {{else}}
+                        <div class="gh-author-icon">{{> icons/avatar}}</div>
+                    {{/if}}
+                </figure>
+
+                <div class="gh-pagehead-content">
+                    <h1 class="gh-pagehead-title">{{name}}</h1>
+
+                    {{#if bio}}
+                        <div class="gh-author-bio gh-pagehead-description">{{bio}}</div>
+                    {{/if}}
+                </div>
+            </section>
+        {{/author}}
+
+        <div class="gh-topic gh-topic-grid">
+            <div class="gh-topic-content gh-feed">
+                {{#foreach posts limit="all"}}
+                    {{> "loop-grid"}}
+                {{/foreach}}
+            </div>
+        </div>
+    </div>
+</main>

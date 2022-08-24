@@ -1,0 +1,17 @@
+<section class="gh-topic gh-topic-grid">
+    <h2 class="gh-topic-name">
+        <a href="{{url}}">{{name}}</a>
+    </h2>
+
+    <div class="gh-topic-content">
+        {{#get "posts" include="tags,authors" filter="tag:{{slug}}" limit="7"}}
+            {{#foreach posts}}
+                {{> "loop-grid"}}
+            {{/foreach}}
+        {{/get}}
+    </div>
+
+    <footer class="gh-topic-footer">
+        <a class="gh-topic-link" href="{{url}}">Show more {{> "icons/arrow"}}</a>
+    </footer>
+</section>

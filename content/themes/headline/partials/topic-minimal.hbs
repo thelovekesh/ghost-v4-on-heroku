@@ -1,0 +1,16 @@
+<section class="gh-topic gh-topic-minimal">
+    <header class="gh-topic-header">
+        <h2 class="gh-topic-name">
+            <a href="{{url}}">{{name}}</a>
+        </h2>
+        <a class="gh-topic-link" href="{{url}}">More {{> "icons/arrow"}}</a>
+    </header>
+
+    <div class="gh-topic-content">
+        {{#get "posts" include="tags,authors" filter="tag:{{slug}}" limit="5"}}
+            {{#foreach posts}}
+                {{> "loop-minimal"}}
+            {{/foreach}}
+        {{/get}}
+    </div>
+</section>
