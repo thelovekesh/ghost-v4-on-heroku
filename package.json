@@ -26,6 +26,7 @@
     "ghost": "^4.48.0",
     "ghost-storage-adapter-s3": "^2.8.0",
     "ghost-storage-cloudinary": "^2.2.4",
+    "headline": "github:TryGhost/Headline",
     "lyra": "github:TryGhost/lyra#main",
     "mysql": "^2.18.1"
   },
