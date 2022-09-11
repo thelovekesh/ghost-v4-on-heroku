@@ -20,7 +20,7 @@
 
                 <div class="gh-head-brand">
                     <div class="gh-head-brand-wrapper">
-                        <a class="gh-head-logo" href="{{@site.url}}">
+                        <a class="gh-head-logo" href="https://mvst.co">
                             {{#if @site.logo}}
                                 <img src="{{@site.logo}}" alt="{{@site.title}}">
 
@@ -43,10 +43,11 @@
                 <div class="gh-head-actions">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
                     {{#unless @member}}
-                        <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                        <a href="#/portal/signup" data-portal="signup">Subscribe</a>
                     {{else}}
                         <a class="gh-head-btn gh-btn" href="#/portal/account" data-portal="account">Account</a>
                     {{/unless}}
+                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co">Go To Main Page</a>
                 </div>
             </div>
         </header>
