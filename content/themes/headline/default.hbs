@@ -32,23 +32,27 @@
                             {{/if}}
                         </a>
                     </div>
-                    <!--
-                    <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
-                    <button class="gh-burger"></button>-->
+                    <button class="gh-search gh-icon-btn hidden" data-ghost-search>{{> "icons/search"}}</button>
+                    <button class="gh-burger"></button>
                 </div>
 
-                <nav class="gh-head-menu">
+                <nav class="gh-head-menu hidden">
                     {{navigation}}
                 </nav>
 
                 <div class="gh-head-actions">
-                    <!--<button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
+                    <a href="https://mvst.co/services">Services</a>
+                    <a href="https://mvst.co/our-work">Our Work</a>
+                    <a href="https://blog.mvst.co">Blog</a>
+                    <a href="https://mvst.co/career">Career</a>
+                    <a href="https://mvst.co/about-us">About Us</a>
+                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co/contact">Contact 👋</a>
+                    <button class="gh-search gh-icon-btn hidden" data-ghost-search>{{> "icons/search"}}</button>
                     {{#unless @member}}
-                        <a href="#/portal/signup" data-portal="signup">Subscribe</a>
+                        <a href="#/portal/signup" class="hidden" data-portal="signup">Subscribe</a>
                     {{else}}
-                        <a class="gh-head-btn gh-btn" href="#/portal/account" data-portal="account">Account</a>
-                    {{/unless}}-->
-                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co">Go To Main Page</a>
+                        <a class="gh-head-btn gh-btn hidden" href="#/portal/account" data-portal="account">Account</a>
+                    {{/unless}}
                 </div>
             </div>
         </header>
@@ -60,21 +64,26 @@
         <footer class="gh-foot gh-outer">
             <div class="gh-foot-inner gh-inner">
                 {{^if @member.paid}}
-                    <section class="gh-subscribe">
+                    <section class="gh-subscribe flex flex-row">
+                        <div class="flex flex-col">
+                            <h4 class="gh-subscribe-title">We would love to be your partner.</h3>
+                            <div class="gh-subscribe-description">Let's build a great digital experience together.</div>
+                        </div>
+                        <a class="gh-subscribe-btn gh-btn text-black" href="https://mvst.co/contact">Contact Us 👋</a>
                         {{^if @member}}
-                            <h4 class="gh-subscribe-title">Subscribe to {{@site.title}}</h3>
+                            <h4 class="gh-subscribe-title hidden">Subscribe to {{@site.title}}</h3>
 
                             {{#if @custom.email_signup_text}}
-                                <div class="gh-subscribe-description">{{@custom.email_signup_text}}</div>
+                                <div class="gh-subscribe-description hidden">{{@custom.email_signup_text}}</div>
                             {{/if}}
 
-                            <button class="gh-subscribe-btn gh-btn" data-portal="signup">{{> "icons/email"}} Subscribe now</button>
+                            <button class="gh-subscribe-btn gh-btn hidden" data-portal="signup">{{> "icons/email"}} Subscribe now</button>
                         {{else}}
-                            <h3 class="gh-subscribe-title">Ready for unlimited access?</h3>
+                            <h3 class="gh-subscribe-title hidden">Ready for unlimited access?</h3>
 
-                            <div class="gh-subscribe-description">Upgrade to a paid account to get full access to all content.</div>
+                            <div class="gh-subscribe-description hidden">Upgrade to a paid account to get full access to all content.</div>
 
-                            <button class="gh-subscribe-btn gh-btn" data-portal="account/plans">Upgrade now</button>
+                            <button class="gh-subscribe-btn gh-btn hidden" data-portal="account/plans">Upgrade now</button>
                         {{/if}}
                     </section>
                 {{/if}}
@@ -85,7 +94,7 @@
 
                 <div class="gh-copyright">
                     {{#unless @custom.footer_text}}
-                        {{@site.title}} © {{date format="YYYY"}}. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+                        MVST.co © {{date format="YYYY"}}
                     {{else}}
                         {{@custom.footer_text}}
                     {{/unless}}
@@ -97,6 +106,7 @@
     {{#is "post, page"}}
         {{> "pswp"}}
     {{/is}}
+
 
     <script src="{{asset "built/main.min.js"}}"></script>
 
