@@ -32,9 +32,8 @@
                             {{/if}}
                         </a>
                     </div>
-                    <!--
-                    <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
-                    <button class="gh-burger"></button>-->
+                    <button class="gh-search gh-icon-btn hidden" data-ghost-search>{{> "icons/search"}}</button>
+                    <button class="gh-burger"></button>
                 </div>
 
                 <nav class="gh-head-menu">
@@ -42,12 +41,18 @@
                 </nav>
 
                 <div class="gh-head-actions">
-                    <!--<button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
+                    <a href="https://mvst.co/services">Services</a>
+                    <a href="https://mvst.co/our-work">Our Work</a>
+                    <a href="https://blog.mvst.co">Blog</a>
+                    <a href="https://mvst.co/career">Career</a>
+                    <a href="https://mvst.co/about-us">About Us</a>
+                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co/contact">Contact us</a>
+                    <button class="gh-search gh-icon-btn hidden" data-ghost-search>{{> "icons/search"}}</button>
                     {{#unless @member}}
-                        <a href="#/portal/signup" data-portal="signup">Subscribe</a>
+                        <a href="#/portal/signup" class="hidden" data-portal="signup">Subscribe</a>
                     {{else}}
-                        <a class="gh-head-btn gh-btn" href="#/portal/account" data-portal="account">Account</a>
-                    {{/unless}}-->
+                        <a class="gh-head-btn gh-btn hidden" href="#/portal/account" data-portal="account">Account</a>
+                    {{/unless}}
                     <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co">Go To Main Page</a>
                 </div>
             </div>
@@ -85,7 +90,7 @@
 
                 <div class="gh-copyright">
                     {{#unless @custom.footer_text}}
-                        {{@site.title}} © {{date format="YYYY"}}. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+                        {{@site.title}} © {{date format="YYYY"}}
                     {{else}}
                         {{@custom.footer_text}}
                     {{/unless}}
