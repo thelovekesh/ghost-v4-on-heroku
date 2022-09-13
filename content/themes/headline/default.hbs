@@ -65,7 +65,7 @@
         <footer class="gh-foot gh-outer">
             <div class="gh-foot-inner gh-inner">
                 {{^if @member.paid}}
-                    <section class="gh-subscribe">
+                    <section class="gh-subscribe hidden">
                         {{^if @member}}
                             <h4 class="gh-subscribe-title">Subscribe to {{@site.title}}</h3>
 
@@ -102,6 +102,8 @@
     {{#is "post, page"}}
         {{> "pswp"}}
     {{/is}}
+
+     {{ghost_foot}}
 </body>
 
 </html>
