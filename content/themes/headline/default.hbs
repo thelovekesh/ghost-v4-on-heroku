@@ -65,21 +65,23 @@
         <footer class="gh-foot gh-outer">
             <div class="gh-foot-inner gh-inner">
                 {{^if @member.paid}}
-                    <section class="gh-subscribe hidden">
+                    <section class="gh-subscribe">
+                        <h4 class="gh-subscribe-title">We would love to be your partner.</h3>
+                        <div class="gh-subscribe-description hidden">Let's build a great digital experience together.</div>
                         {{^if @member}}
-                            <h4 class="gh-subscribe-title">Subscribe to {{@site.title}}</h3>
+                            <h4 class="gh-subscribe-title hidden">Subscribe to {{@site.title}}</h3>
 
                             {{#if @custom.email_signup_text}}
-                                <div class="gh-subscribe-description">{{@custom.email_signup_text}}</div>
+                                <div class="gh-subscribe-description hidden">{{@custom.email_signup_text}}</div>
                             {{/if}}
 
-                            <button class="gh-subscribe-btn gh-btn" data-portal="signup">{{> "icons/email"}} Subscribe now</button>
+                            <button class="gh-subscribe-btn gh-btn hidden" data-portal="signup">{{> "icons/email"}} Subscribe now</button>
                         {{else}}
-                            <h3 class="gh-subscribe-title">Ready for unlimited access?</h3>
+                            <h3 class="gh-subscribe-title hidden">Ready for unlimited access?</h3>
 
-                            <div class="gh-subscribe-description">Upgrade to a paid account to get full access to all content.</div>
+                            <div class="gh-subscribe-description hidden">Upgrade to a paid account to get full access to all content.</div>
 
-                            <button class="gh-subscribe-btn gh-btn" data-portal="account/plans">Upgrade now</button>
+                            <button class="gh-subscribe-btn gh-btn hidden" data-portal="account/plans">Upgrade now</button>
                         {{/if}}
                     </section>
                 {{/if}}
