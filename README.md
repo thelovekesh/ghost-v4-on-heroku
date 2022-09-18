@@ -47,6 +47,10 @@ A more permanent solution would be to use a custom domain and verify your domain
 
 FYI: You can access mailgun dashboard by visiting heroku dashboard > click on your app > resources tab > click on mailgun addon.
 
+### Settings up Dynamic Routing
+
+Modify the router.yaml file then go to `Settings -> Labs -> Upload routing` and upload the file , Dont forget to commit.
+
 ### Chnage Config Vars Value in Heroku
 How can I change the value of `APP_PUBLIC_URL`, `MAILGUN_API_KEY`, `MAILGUN_DOMAIN`, `MAILGUN_PUBLIC_KEY`, `MAILGUN_SMTP_LOGIN`, `MYSQL_DATABASE_URL or JAWSDB_URL`, `S3_ACCESS_KEY_ID` ...etc?
 You cannot change the value in the `config.production.json` but you can change the values using the `Heroku CLI` or `Heroku Dashboard`.
