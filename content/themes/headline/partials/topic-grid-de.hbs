@@ -4,7 +4,7 @@
     </h2>
 
     <div class="gh-topic-content">
-        {{#get "posts" include="tags,authors" filter="tag:{{slug}}+tag:en" limit="7"}}
+        {{#get "posts" include="tags,authors" filter="tag:{{slug}}+tag:de" limit="7"}}
             {{#foreach posts}}
                 {{> "loop-grid"}}
             {{/foreach}}
@@ -12,6 +12,6 @@
     </div>
 
     <footer class="gh-topic-footer">
-        <a class="gh-topic-link" href="{{url}}">Show more {{> "icons/arrow"}}</a>
+        <a class="gh-topic-link" href="{{url}}">Zeig mehr {{> "icons/arrow"}}</a>
     </footer>
 </section>

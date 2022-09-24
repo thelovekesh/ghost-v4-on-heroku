@@ -1,14 +1,14 @@
 routes:
 
 collections:
-  /de/:
-    permalink: /de/{slug}/
-    template: index
-    filter: primary_tag:de  
   /:
     permalink: /{slug}/
     template: index
-    filter: primary_tag:en
+    filter: tag:-de
+  /de/:
+    permalink: /de/{slug}/
+    template: dehome
+    filter: tag:de  
 
 taxonomies:
   tag: /tag/{slug}/
