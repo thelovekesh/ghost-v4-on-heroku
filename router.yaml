@@ -1,5 +1,6 @@
 routes:
 
+
 collections:
   /:
     permalink: /{slug}/
@@ -8,7 +9,10 @@ collections:
   /de/:
     permalink: /de/{slug}/
     template: dehome
-    filter: tag:de  
+    filter: tag:de
+  /topic/de/:
+    permalink: /tag/{slug}/
+    template: detag
 
 taxonomies:
   tag: /tag/{slug}/

@@ -25,43 +25,5 @@
                 {{/match}}
             </footer>
         </section>
-
-        {{#if @custom.enter_tag_slugs_for_primary_sections}}
-            {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_primary_sections}}]"}}
-                {{#foreach tags}}
-                    {{> "topic-grid-de"}}
-                {{/foreach}}
-            {{/get}}
-
-            {{#if @custom.enter_tag_slugs_for_secondary_sections}}
-                {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_secondary_sections}}]"}}
-                    {{#if tags}}
-                        <div class="gh-topic-list">
-                            {{#foreach tags}}
-                                {{> "topic-minimal-de"}}
-                            {{/foreach}}
-                        </div>
-                    {{/if}}
-                {{/get}}
-            {{/if}}
-        {{else}}
-            {{#match posts.length ">" 1}}
-                {{#get "tags" include="count.posts" order="count.posts desc" limit="3"}}
-                    {{#foreach tags}}
-                        {{> "topic-grid-de"}}
-                    {{/foreach}}
-                {{/get}}
-
-                {{#get "tags" include="count.posts" order="count.posts desc"}}
-                    {{#if tags.[3]}}
-                        <div class="gh-topic-list">
-                            {{#foreach tags from="4" limit="3"}}
-                                {{> "topic-minimal-de"}}
-                            {{/foreach}}
-                        </div>
-                    {{/if}}
-                {{/get}}
-            {{/match}}
-        {{/if}}
     </div>
 </main>
