@@ -1,0 +1,19 @@
+routes:
+
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+    filter: tag:-de
+  /de/:
+    permalink: /de/{slug}/
+    template: dehome
+    filter: tag:de
+  /topic/de/:
+    permalink: /tag/{slug}/
+    template: detag
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
