@@ -12,12 +12,54 @@
             </h2>
 
             <div class="gh-topic-content">
-                {{#get "posts" include="authors" limit="all" filter="tag:en"}}
+                {{#get "posts" include="authors" limit="7"}}
                     {{#foreach posts}}
                         {{> "loop-grid"}}
                     {{/foreach}}
                 {{/get}}
             </div>
+
+            <footer class="gh-topic-footer">
+                {{#match pagination.pages ">" 1}}
+                    <a class="gh-topic-link" href="{{@site.url}}/page/2">Show more {{> "icons/arrow"}}</a>
+                {{/match}}
+            </footer>
         </section>
+        
+        {{#if @custom.enter_tag_slugs_for_primary_sections}}
+            {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_primary_sections}}]"}}
+                {{#foreach tags}}
+                    {{> "topic-grid"}}
+                {{/foreach}}
+            {{/get}}
+
+            {{#if @custom.enter_tag_slugs_for_secondary_sections}}
+                {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_secondary_sections}}]"}}
+                    {{#if tags}}
+                        <div class="gh-topic-list">
+                            {{#foreach tags}}
+                                {{> "topic-grid"}}
+                            {{/foreach}}
+                        </div>
+                    {{/if}}
+                {{/get}}
+            {{/if}}
+        {{else}}
+            {{#match posts.length ">" 1}}
+                {{#get "tags" include="count.posts" order="count.posts desc" limit="3"}}
+                    {{#foreach tags}}
+                        {{> "topic-grid"}}
+                    {{/foreach}}
+                {{/get}}
+
+                {{#get "tags" include="count.posts" order="count.posts desc"}}
+                    {{#if tags.[3]}}
+                            {{#foreach tags from="4" limit="3"}}
+                                {{> "topic-grid"}}
+                            {{/foreach}}
+                    {{/if}}
+                {{/get}}
+            {{/match}}
+        {{/if}}
     </div>
 </main>

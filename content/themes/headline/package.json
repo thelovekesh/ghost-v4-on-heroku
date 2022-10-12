@@ -65,6 +65,14 @@
             },
             "footer_text": {
                 "type": "text"
+            },
+            "enter_tag_slugs_for_primary_sections": {
+                "type": "text",
+                "group": "homepage"
+            },
+            "enter_tag_slugs_for_secondary_sections": {
+                "type": "text",
+                "group": "homepage"
             }
         }
     },
