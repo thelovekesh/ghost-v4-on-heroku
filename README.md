@@ -25,6 +25,9 @@ After deployment,
 - If you subsequently set up a [custom domain](https://devcenter.heroku.com/articles/custom-domains) for your blog, you’ll need to update your Ghost blog’s `APP_PUBLIC_URL` environment variable accordingly.
 - If you create a lot of content or decide to scale-up the dynos to support more traffic, a more substantial, paid database plan will be required.
 
+### Enable SSL using Cloudflare
+Please checkout [this](https://support.cloudflare.com/hc/en-us/articles/205893698-Configure-Cloudflare-and-Heroku-over-HTTPS) article.
+
 ### Configuring S3 file uploads
 
 The blog is configured to use Cloudinary file storage by default. If you want to configure S3 file storage, create an S3 bucket on Amazon AWS, and then specify the following details as environment variables on the Heroku deployment page (or add these environment variables to your app after deployment via the Heroku dashboard):
