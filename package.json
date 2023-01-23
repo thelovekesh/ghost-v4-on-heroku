@@ -35,6 +35,6 @@
   "scripts": {
     "start": "node thelovekesh.js",
     "postinstall": "patch-package && bash bin/cloudinary.sh && bash bin/aws-s3.sh && bash bin/themes.sh",
-    "heroku-postbuild": "patch-package"
+    "heroku-cleanup": "patch-package"
   }
 }
