@@ -41,12 +41,12 @@
                 </nav>
 
                 <div class="gh-head-actions">
-                    <a href="https://mvst.co/services">{{t "Services"}}</a>
-                    <a href="https://mvst.co/our-work">{{t "Work"}}</a>
-                    <a href="https://blog.mvst.co">Blog</a>
-                    <a href="https://mvst.co/career">{{t "Career"}}</a>
-                    <a href="https://mvst.co/about-us">{{t "About"}}</a>
-                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co/contact">{{t "Contact"}} 👋</a>
+                    <a href="https://mvst.co{{t 'local'}}services">{{t "Services"}}</a>
+                    <a href="https://mvst.co{{t 'local'}}{{t 'our-work'}}">{{t "Work"}}</a>
+                    <a href="https://blog.mvst.co{{ t 'local'}}">Blog</a>
+                    <a href="https://mvst.co{{t 'local'}}{{t 'career'}}">{{t "Career"}}</a>
+                    <a href="https://mvst.co{{t 'local'}}{{t 'about-us'}}">{{t "About"}}</a>
+                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co{{t 'local'}}{{t "Contact"}}">{{t "Contact"}} 👋</a>
                     <button class="gh-search gh-icon-btn hidden" data-ghost-search>{{> "icons/search"}}</button>
                     {{#unless @member}}
                         <a href="#/portal/signup" class="hidden" data-portal="signup">Subscribe</a>

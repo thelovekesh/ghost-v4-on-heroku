@@ -71,7 +71,7 @@ body:not(.home-template) .gh-topic-grid .gh-topic-content {
 }
 
 .gh-topic-grid .gh-card.large,
-body:not(.home-template) .gh-topic-grid .gh-card {
+body:not(.home-template) main:not(.home-template) .gh-topic-grid .gh-card {
     grid-column: 1 / 3;
 }
 

@@ -1,6 +1,5 @@
 routes:
 
-
 collections:
   /:
     permalink: /{slug}/
@@ -12,4 +11,5 @@ collections:
     filter: tag:hash-de
 
 taxonomies:
+  tag: /tag/{slug}/
   author: /author/{slug}/
