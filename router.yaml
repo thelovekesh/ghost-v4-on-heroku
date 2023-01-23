@@ -5,15 +5,11 @@ collections:
   /:
     permalink: /{slug}/
     template: index
-    filter: tag:-de
+    filter: tag:-hash-de
   /de/:
     permalink: /de/{slug}/
     template: dehome
-    filter: tag:de
-  /topic/de/:
-    permalink: /tag/{slug}/
-    template: detag
+    filter: tag:hash-de
 
 taxonomies:
-  tag: /tag/{slug}/
   author: /author/{slug}/

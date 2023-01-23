@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{@site.locale}}">
 
 <head>
     <meta charset="utf-8">
@@ -41,12 +41,12 @@
                 </nav>
 
                 <div class="gh-head-actions">
-                    <a href="https://mvst.co/services">Services</a>
-                    <a href="https://mvst.co/our-work">Our Work</a>
+                    <a href="https://mvst.co/services">{{t "Services"}}</a>
+                    <a href="https://mvst.co/our-work">{{t "Work"}}</a>
                     <a href="https://blog.mvst.co">Blog</a>
-                    <a href="https://mvst.co/career">Career</a>
-                    <a href="https://mvst.co/about-us">About Us</a>
-                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co/contact">Contact 👋</a>
+                    <a href="https://mvst.co/career">{{t "Career"}}</a>
+                    <a href="https://mvst.co/about-us">{{t "About"}}</a>
+                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co/contact">{{t "Contact"}} 👋</a>
                     <button class="gh-search gh-icon-btn hidden" data-ghost-search>{{> "icons/search"}}</button>
                     {{#unless @member}}
                         <a href="#/portal/signup" class="hidden" data-portal="signup">Subscribe</a>
@@ -66,10 +66,10 @@
                 {{^if @member.paid}}
                     <section class="gh-subscribe flex flex-row">
                         <div class="flex flex-col">
-                            <h4 class="gh-subscribe-title">We would love to be your partner.</h3>
-                            <div class="gh-subscribe-description">Let's build a great digital experience together.</div>
+                            <h4 class="gh-subscribe-title">{{t "SubscribeTitle"}}</h3>
+                            <div class="gh-subscribe-description">{{t "SubscribeDescription"}}</div>
                         </div>
-                        <a class="gh-subscribe-btn gh-btn text-black" href="https://mvst.co/contact">Contact Us 👋</a>
+                        <a class="gh-subscribe-btn gh-btn text-black" href="https://mvst.co/contact">{{t "Contact"}} 👋</a>
                         {{^if @member}}
                             <h4 class="gh-subscribe-title hidden">Subscribe to {{@site.title}}</h3>
 
@@ -89,22 +89,12 @@
                 {{/if}}
 
                 <nav class="gh-foot-menu">
-                    <ul class="nav">
-                        <li>
-                            <a href="https://mvst.co/services">Services</a>
-                        </li>
-                        <li>
-                            <a href="https://www.mvst.co/our-work">Our work</a>
-                        </li>
-                        <li>
-                            <a href="https://mvst.co/about-us">About us</a>
-                        </li>
-                    </ul>
+                    {{navigation type="secondary"}}
                 </nav>
 
                 <div class="gh-copyright">
                     {{#unless @custom.footer_text}}
-                        MVST © {{date format="YYYY"}}
+                        MVST.co © {{date format="YYYY"}}
                     {{else}}
                         {{@custom.footer_text}}
                     {{/unless}}

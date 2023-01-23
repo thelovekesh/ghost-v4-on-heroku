@@ -1,7 +1,11 @@
 {{!< default}}
 
 {{#post}}
-
+        {{#has tag="#de"}}
+            {{#contentFor "lang"}}de{{/contentFor}}
+        {{else}}
+            {{#contentFor "lang"}}en{{/contentFor}}
+        {{/has}}
 <main class="gh-main">
     <article class="gh-article {{post_class}}">
 

@@ -38,17 +38,14 @@
                     {{/if}}
                 </section>
             {{/unless}}
+        {{/tag}}
 
         <div class="gh-topic gh-topic-grid">
             <div class="gh-topic-content gh-feed">
-                {{#get "posts" limit="all" filter="tag:{{name}}"}}
-                    {{#foreach posts}}
-                        {{> "loop-grid"}}
-                    {{/foreach}}
-                {{/get}}
+                {{#foreach posts limit="all"}}
+                    {{> "loop-grid"}}
+                {{/foreach}}
             </div>
         </div>
-
-        {{/tag}}
     </div>
 </main>
