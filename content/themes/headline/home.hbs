@@ -12,7 +12,7 @@
             </h2>
 
             <div class="gh-topic-content">
-                {{#get "posts" include="authors" limit="7" filter="tag:-hash-de"}}
+                {{#get "posts" include="authors,tags" limit="7" filter="tag:en"}}
                     {{#foreach posts}}
                         {{> "loop-grid"}}
                     {{/foreach}}

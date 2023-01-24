@@ -42,9 +42,12 @@
 
         <div class="gh-topic gh-topic-grid">
             <div class="gh-topic-content gh-feed">
-                {{#foreach posts limit="all"}}
+                {{#get "posts" include="authors,tags" limit="all" filter="tag:en"}}
+                {{#foreach posts}}
                     {{> "loop-grid"}}
                 {{/foreach}}
+                
+                {{/get}}
             </div>
         </div>
     </div>

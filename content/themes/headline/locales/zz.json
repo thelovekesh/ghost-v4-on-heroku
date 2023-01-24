@@ -11,6 +11,10 @@
   "en.our-work": "our-work",
   "en.career": "career",
   "en.about-us": "about-us",
+  "en.Data":"Data Privacy",
+  "en.data-privacy":"data-privacy",
+  "en.Imprint":"Imprint",
+  "en.imprint":"imprint",
   "de.Work": "Projekte",
   "de.Services": "Services",
   "de.Career": "Karriere",
@@ -22,5 +26,9 @@
   "de.local": "/de/",
   "de.our-work": "projekte",
   "de.career": "karriere",
-  "de.about-us": "ueber-uns"
+  "de.about-us": "ueber-uns",
+  "de.Data":"Datenschutz",
+  "de.data-privacy":"datenschutz",
+  "de.Imprint":"Impressum",
+  "de.imprint":"impressum"
 }

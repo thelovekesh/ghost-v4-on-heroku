@@ -89,11 +89,19 @@
                 {{/if}}
 
                 <nav class="gh-foot-menu">
-                    {{navigation type="secondary"}}
+                    <ul class="nav">
+                        <li class="nav-services"><a href="https://mvst.co{{t 'local'}}services">{{t "Services"}}</a></li>
+                        <li class="nav-solutions"><a href="https://mvst.co{{t 'local'}}{{t 'our-work'}}">{{t "Work"}}</a></li>
+                        <li class="nav-about-us"><a href="https://mvst.co{{t 'local'}}{{t 'about-us'}}">{{t "About"}}</a></li>
+                        <li class="nav-about-us"><a href="https://mvst.co{{t 'local'}}{{t 'data-privacy'}}">{{t "Data"}}</a></li>
+                        <li class="nav-about-us"><a href="https://mvst.co{{t 'local'}}{{t 'imprint'}}">{{t "Imprint"}}</a></li>
+                    </ul>
                 </nav>
 
-                <div class="gh-copyright">
+                <div class="gh-copyright" style="text-align:center">
                     {{#unless @custom.footer_text}}
+                        <a href="mailto:hello@mvst.co">hello@mvst.co</a>
+                        <br>
                         MVST.co © {{date format="YYYY"}}
                     {{else}}
                         {{@custom.footer_text}}
