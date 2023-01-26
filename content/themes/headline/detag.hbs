@@ -1,5 +1,5 @@
-{{!< dedefault}}
-
+{{!< default}}
+{{#contentFor "lang"}}de{{/contentFor}}
 {{#tag}}
     {{#if feature_image}}
         <section class="gh-cover gh-outer">
@@ -16,7 +16,7 @@
             >
 
             <div class="gh-cover-content">
-                <h1 class="gh-cover-title">{{slug}}</h1>
+                <h1 class="gh-cover-title">{{name}}</h1>
 
                 {{#if description}}
                     <p class="gh-cover-description">{{description}}</p>
@@ -28,12 +28,26 @@
 
 <main class="gh-main gh-outer">
     <div class="gh-inner">
+        {{#tag}}
+            {{#unless feature_image}}
+                <section class="gh-pagehead">
+                    <h1 class="gh-pagehead-title">{{name}}</h1>
+
+                    {{#if description}}
+                        <div class="gh-pagehead-description">{{description}}</div>
+                    {{/if}}
+                </section>
+            {{/unless}}
+        {{/tag}}
+
         <div class="gh-topic gh-topic-grid">
             <div class="gh-topic-content gh-feed">
-                {{#get "posts" include="authors" limit="all" filter="tag:{{slug}}+tag:de"}}
-                    {{#foreach posts}}
-                        {{> "loop-grid"}}
-                    {{/foreach}}
+
+                {{#get "posts" include="authors,tags" limit="all" filter="tag:hash-de"}}
+                {{#foreach posts}}
+                    {{> "loop-grid"}}
+                {{/foreach}}
+                
                 {{/get}}
             </div>
         </div>

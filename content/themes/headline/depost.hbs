@@ -2,6 +2,12 @@
 
 <main class="gh-main">
     {{#post}}
+
+        {{#has tag="#de"}}
+            {{#contentFor "lang"}}de{{/contentFor}}
+        {{else}}
+            {{#contentFor "lang"}}en{{/contentFor}}
+        {{/has}}
         <article class="gh-article {{post_class}}">
 
             <header class="gh-article-header gh-canvas">

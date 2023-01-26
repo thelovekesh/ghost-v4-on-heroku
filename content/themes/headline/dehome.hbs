@@ -1,5 +1,5 @@
-{{!< dedefault}}
-
+{{!< default}}
+{{#contentFor "lang"}}de{{/contentFor}}
 <main class="home-template gh-main gh-outer">
     <div class="gh-inner">
         <section class="gh-topic gh-topic-grid">
@@ -12,18 +12,18 @@
             </h2>
 
             <div class="gh-topic-content">
-                {{#get "posts" include="authors" limit="7" filter="tag:de"}}
+                {{#get "posts" include="authors,tags" limit="7" filter="tag:hash-de"}}
                     {{#foreach posts}}
                         {{> "loop-grid-de"}}
                     {{/foreach}}
                 {{/get}}
             </div>
-
-            <footer class="gh-topic-footer">
-                {{#match pagination.pages ">" 1}}
-                    <a class="gh-topic-link" href="{{@site.url}}/page/2">Zeig mehr {{> "icons/arrow"}}</a>
-                {{/match}}
-            </footer>
         </section>
+            {{#get "tags"}}
+                {{#foreach tags}}
+                 {{tags}}
+                    {{> "topic-grid-de"}}
+                {{/foreach}}
+            {{/get}}
     </div>
 </main>
