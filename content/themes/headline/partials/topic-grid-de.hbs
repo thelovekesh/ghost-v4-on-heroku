@@ -4,7 +4,7 @@
     </h2>
 
     <div class="gh-topic-content">
-        {{#get "posts" include="tags,authors" filter="tag:{{slug}}+tag:de" limit="all"}}
+        {{#get "posts" include="tags,authors" filter="tag:{{slug}}+tag:hash-de" limit="all"}}
             {{#foreach posts}}
                 {{> "loop-grid"}}
             {{/foreach}}
