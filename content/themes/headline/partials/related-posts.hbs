@@ -1,5 +1,5 @@
 {{#is "post"}}
-    {{#get "posts" include="authors" filter="tags:[{{post.tags}},en]+id:-{{post.id}}" limit="3" as |next|}}
+    {{#get "posts" include="authors" filter="tags:[{{post.tags}},-hash-de]+id:-{{post.id}}" limit="3" as |next|}}
         {{#if next}}
             <div class="gh-read-next gh-canvas">
                 <section class="gh-pagehead">

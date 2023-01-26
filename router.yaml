@@ -12,5 +12,4 @@ collections:
 
 taxonomies:
   tag: /tag/{slug}/
-  tag: /tag/de/{slug}/
   author: /author/{slug}/
