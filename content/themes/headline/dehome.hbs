@@ -19,11 +19,35 @@
                 {{/get}}
             </div>
         </section>
-            {{#get "tags"}}
-                {{#foreach tags}}
-                 {{tags}}
+            {{#get "tags" filter="name:Development"}}
+            {{#foreach tags}}
+                {{tags}}
                     {{> "topic-grid-de"}}
-                {{/foreach}}
-            {{/get}}
+            {{/foreach}}
+        {{/get}}
+        {{#get "tags" filter="name:Design"}}
+            {{#foreach tags}}
+                {{tags}}
+                    {{> "topic-grid-de"}}
+            {{/foreach}}
+        {{/get}}
+        {{#get "tags" filter="name:Startup"}}
+            {{#foreach tags}}
+                {{tags}}
+                    {{> "topic-grid-de"}}
+            {{/foreach}}
+        {{/get}}
+        {{#get "tags" filter="name:Team"}}
+            {{#foreach tags}}
+                {{tags}}
+                    {{> "topic-grid-de"}}
+            {{/foreach}}
+        {{/get}}
+        {{#get "tags" filter="name:'Company Culture'"}}
+            {{#foreach tags}}
+                {{tags}}
+                    {{> "topic-grid-de"}}
+            {{/foreach}}
+        {{/get}}
     </div>
 </main>
