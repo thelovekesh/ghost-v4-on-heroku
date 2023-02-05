@@ -16,28 +16,30 @@
     } else {
         selectorDeutsch.classList.add('invisible');
     }
-    let options = document.querySelector("#options")
-    let overlay = document.querySelector("#overlay");
+    let optionsDetusch = document.querySelector("#options-deutsch")
+    let overlayDeutsch = document.querySelector("#overlay-deutsch");
+    let optionsEnglish = document.querySelector("#options-english")
+    let overlayEnglish = document.querySelector("#overlay-english");
     selectorEnglish.addEventListener('click', function () {
         hidden = !hidden;
         console.log("clicked", hidden);
         if (hidden) {
-            options.classList.add("invisible");
-            overlay.classList.add("invisible");
+            optionsEnglish.classList.add("invisible");
+            overlayEnglish.classList.add("invisible");
         } else {
-            options.classList.remove("invisible");
-            overlay.classList.remove("invisible");
+            optionsEnglish.classList.remove("invisible");
+            overlayEnglish.classList.remove("invisible");
         }
     })
     selectorDeutsch.addEventListener('click', function () {
         hidden = !hidden;
         console.log("clicked", hidden);
         if (hidden) {
-            options.classList.add("invisible");
-            overlay.classList.add("invisible");
+            optionsDetusch.classList.add("invisible");
+            overlayDeutsch.classList.add("invisible");
         } else {
-            options.classList.remove("invisible");
-            overlay.classList.remove("invisible");
+            optionsDetusch.classList.remove("invisible");
+            overlayDeutsch.classList.remove("invisible");
         }
     })
     if (!document.body.classList.contains('post-template')) return;
