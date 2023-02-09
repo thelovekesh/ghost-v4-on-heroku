@@ -3,10 +3,11 @@
 })();
 
 (function () {
-    console.log(window.location);
     let route = window.location.pathname;
+    if (route === "/de/") {
+        document.title = "MVST. Blog"
+    }
     let slugs = route.split('/');
-    console.log(slugs);
     let isDeutsch = slugs[1] === "de";
     let hidden = true;
     let selectorEnglish = document.querySelector("#language-selector-english");
