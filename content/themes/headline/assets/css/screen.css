@@ -814,8 +814,8 @@ body:not(.home-template) main:not(.home-template) .gh-topic-grid .gh-card {
 }
 
 @media (min-width: 768px) {
-  body:not(.home-template) .gh-topic-grid .gh-card:not(.large) .gh-card-image {
-    width: 160px;
+  .gh-topic-grid .gh-card:not(.large) .gh-card-image {
+    width: 160px !important;
   }
 }
 
