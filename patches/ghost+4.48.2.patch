@@ -43,11 +43,11 @@ index 0000000..b353b45
 +taxonomies:
 +  tag: /tag/{slug}/
 +  author: /author/{slug}/
-diff --git a/node_modules/ghost/content/settings/routes.yaml b/node_modules/ghost/content/settings/routes.yaml
+diff --git a/content/settings/routes.yaml b/content/settings/routes.yaml
 new file mode 100644
 index 0000000..b353b45
 --- /dev/null
-+++ b/node_modules/ghost/content/settings/routes.yaml
++++ b/content/settings/routes.yaml
 @@ -0,0 +1,15 @@
 +routes:
 +
