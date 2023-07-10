@@ -3,7 +3,7 @@ new file mode 100644
 index 0000000..e69de29
 diff --git a/node_modules/ghost/content/data/ghost-dev.db b/node_modules/ghost/content/data/ghost-dev.db
 new file mode 100644
-index 0000000..6607a6e
+index 0000000..d73aeb4
 Binary files /dev/null and b/node_modules/ghost/content/data/ghost-dev.db differ
 diff --git a/node_modules/ghost/content/public/cards.min.css b/node_modules/ghost/content/public/cards.min.css
 new file mode 100644
@@ -10478,15 +10478,19 @@ index 0000000..1d175f7
 +exports.default = series(build, serve, watcher);
 diff --git a/node_modules/ghost/content/themes/mvst/home.hbs b/node_modules/ghost/content/themes/mvst/home.hbs
 new file mode 100644
-index 0000000..6118417
+index 0000000..c3ab372
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/home.hbs
-@@ -0,0 +1,61 @@
+@@ -0,0 +1,65 @@
 +{{!< default}}
 +{{#contentFor "lang"}}en{{/contentFor}}
 +<main class="gh-main gh-outer">
 +    <div class="gh-inner">
-+        <h1 class="gh-home-title">Welcome to MVST blog</h1>
++      <section style="height: 30vh;display: flex;align-items: center;justify-content: center;flex-direction: column">
++       <h1>MVST Blog</h1>
++        <br/>
++        <h2>Latest News about Development, Design, Startup Culture and more</h2>
++        </section>
 +        <section class="gh-topic gh-topic-grid">
 +            <h2 class="gh-topic-name">
 +                {{#match pagination.pages ">" 1}}
@@ -16732,7 +16736,7 @@ index 0000000..fdb548d
 +    compress-commons "^4.1.0"
 +    readable-stream "^3.6.0"
 diff --git a/node_modules/ghost/core/frontend/helpers/img_url.js b/node_modules/ghost/core/frontend/helpers/img_url.js
-index f1744fb..653723f 100644
+index f1744fb..0b51dd6 100644
 --- a/node_modules/ghost/core/frontend/helpers/img_url.js
 +++ b/node_modules/ghost/core/frontend/helpers/img_url.js
 @@ -42,7 +42,7 @@ module.exports = function imgUrl(requestedImageUrl, options) {
@@ -16744,7 +16748,7 @@ index f1744fb..653723f 100644
      }
  
      const {requestedSize, imageSizes} = getImageSizeOptions(options);
-@@ -130,3 +130,41 @@ function getImageWithSize(imagePath, requestedSize, imageSizes) {
+@@ -130,3 +130,48 @@ function getImageWithSize(imagePath, requestedSize, imageSizes) {
  function prefixIfPresent(prefix, string) {
      return string ? prefix + string : '';
  }
@@ -16760,7 +16764,7 @@ index f1744fb..653723f 100644
 +}
 +
 +function detectCloudinaryImage(requestedImageUrl) {
-+    const cateoCloudinaryUrl ="https://res-3.cloudinary.com/hcx9j0y21/image/upload/q_auto/v1/ghost-blog-imges/";
++    const cateoCloudinaryUrl ="https://res-3.cloudinary.com/hcx9j0y21/image/upload/q_auto/v1/ghost-blog-images/";
 +    return requestedImageUrl.startsWith(cateoCloudinaryUrl);
 +}
 +
@@ -16782,8 +16786,15 @@ index f1744fb..653723f 100644
 +    }
 +
 +
-+    const defaultParam = 'q_quto';
-+    const newParams = `${defaultParam},w_${width},h_${height}`;
++    const defaultParam = 'q_auto';
++    let newParams = `${defaultParam}`;
++    if (width) {
++        newParams += `,w_${width}`;
++    }
++    if(height) {
++        newParams += `,h_${height}`;
++    }
++
 +    return requestedImageUrl.replace(defaultParam, newParams);
 +}
 \ No newline at end of file
