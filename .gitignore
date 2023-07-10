@@ -4,3 +4,7 @@ content/adapters/
 content/data/
 content/themes/casper/
 content/themes/lyra/
+
+#IDE
+
+.idea/

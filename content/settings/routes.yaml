@@ -1,0 +1,15 @@
+routes:
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+    filter: 'tag:-hash-de'
+  /de/:
+    permalink: /de/{slug}/
+    template: dehome
+    filter: 'tag:hash-de'
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

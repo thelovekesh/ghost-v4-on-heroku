@@ -1,10 +1,9 @@
 diff --git a/node_modules/ghost/content/.DS_Store b/node_modules/ghost/content/.DS_Store
 new file mode 100644
-index 0000000..8e5591b
-Binary files /dev/null and b/node_modules/ghost/content/.DS_Store differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/data/ghost-dev.db b/node_modules/ghost/content/data/ghost-dev.db
 new file mode 100644
-index 0000000..24bb0c5
+index 0000000..6607a6e
 Binary files /dev/null and b/node_modules/ghost/content/data/ghost-dev.db differ
 diff --git a/node_modules/ghost/content/public/cards.min.css b/node_modules/ghost/content/public/cards.min.css
 new file mode 100644
@@ -43,31 +42,25 @@ index 0000000..b353b45
 +taxonomies:
 +  tag: /tag/{slug}/
 +  author: /author/{slug}/
-diff --git a/content/settings/routes.yaml b/content/settings/routes.yaml
+diff --git a/node_modules/ghost/content/settings/routes.yaml b/node_modules/ghost/content/settings/routes.yaml
 new file mode 100644
-index 0000000..b353b45
+index 0000000..7e2cb9c
 --- /dev/null
-+++ b/content/settings/routes.yaml
-@@ -0,0 +1,15 @@
++++ b/node_modules/ghost/content/settings/routes.yaml
+@@ -0,0 +1,10 @@
 +routes:
 +
 +collections:
 +  /:
 +    permalink: /{slug}/
 +    template: index
-+    filter: 'tag:-hash-de'
-+  /de/:
-+    permalink: /de/{slug}/
-+    template: dehome
-+    filter: 'tag:hash-de'
 +
 +taxonomies:
 +  tag: /tag/{slug}/
 +  author: /author/{slug}/
 diff --git a/node_modules/ghost/content/themes/.DS_Store b/node_modules/ghost/content/themes/.DS_Store
 new file mode 100644
-index 0000000..2fb0b65
-Binary files /dev/null and b/node_modules/ghost/content/themes/.DS_Store differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/LICENSE b/node_modules/ghost/content/themes/headline/LICENSE
 new file mode 100644
 index 0000000..1dc9a46
@@ -1192,88 +1185,67 @@ index 0000000..dbe3e50
 +}
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-500.woff b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-500.woff
 new file mode 100644
-index 0000000..19c7bf8
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-500.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-500.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-500.woff2
 new file mode 100644
-index 0000000..6fc94ad
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-500.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-600.woff b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-600.woff
 new file mode 100644
-index 0000000..b606a87
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-600.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-600.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-600.woff2
 new file mode 100644
-index 0000000..bc76d10
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-600.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-700.woff b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-700.woff
 new file mode 100644
-index 0000000..097e23e
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-700.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-700.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-700.woff2
 new file mode 100644
-index 0000000..8fcc432
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-700.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-regular.woff b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-regular.woff
 new file mode 100644
-index 0000000..1866261
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-regular.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-regular.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-regular.woff2
 new file mode 100644
-index 0000000..c659f5e
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/inter-v12-latin-regular.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-500.woff b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-500.woff
 new file mode 100644
-index 0000000..619fb31
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-500.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-500.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-500.woff2
 new file mode 100644
-index 0000000..e8712f1
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-500.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-600.woff b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-600.woff
 new file mode 100644
-index 0000000..ab401cb
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-600.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-600.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-600.woff2
 new file mode 100644
-index 0000000..2270d92
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-600.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700.woff b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700.woff
 new file mode 100644
-index 0000000..eb11a80
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700.woff2
 new file mode 100644
-index 0000000..03dec52
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700italic.woff b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700italic.woff
 new file mode 100644
-index 0000000..2235111
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700italic.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700italic.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700italic.woff2
 new file mode 100644
-index 0000000..7b00f85
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-700italic.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-italic.woff b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-italic.woff
 new file mode 100644
-index 0000000..13e2696
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-italic.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-italic.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-italic.woff2
 new file mode 100644
-index 0000000..0d04921
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-italic.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-regular.woff b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-regular.woff
 new file mode 100644
-index 0000000..fa15419
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-regular.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-regular.woff2 b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-regular.woff2
 new file mode 100644
-index 0000000..688eaad
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/fonts/lora-v25-latin-regular.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/images/default-skin.png b/node_modules/ghost/content/themes/headline/assets/images/default-skin.png
 new file mode 100755
-index 0000000..441c502
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/images/default-skin.png differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/images/default-skin.svg b/node_modules/ghost/content/themes/headline/assets/images/default-skin.svg
 new file mode 100755
 index 0000000..9d5f0c6
@@ -1284,8 +1256,7 @@ index 0000000..9d5f0c6
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/assets/images/preloader.gif b/node_modules/ghost/content/themes/headline/assets/images/preloader.gif
 new file mode 100755
-index 0000000..b8faa69
-Binary files /dev/null and b/node_modules/ghost/content/themes/headline/assets/images/preloader.gif differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/assets/js/main.js b/node_modules/ghost/content/themes/headline/assets/js/main.js
 new file mode 100644
 index 0000000..293f8b5
@@ -2174,14 +2145,15 @@ index 0000000..1d175f7
 +exports.default = series(build, serve, watcher);
 diff --git a/node_modules/ghost/content/themes/headline/home.hbs b/node_modules/ghost/content/themes/headline/home.hbs
 new file mode 100644
-index 0000000..f0b930b
+index 0000000..7c3d5a8
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/home.hbs
-@@ -0,0 +1,60 @@
+@@ -0,0 +1,61 @@
 +{{!< default}}
 +{{#contentFor "lang"}}en{{/contentFor}}
 +<main class="gh-main gh-outer">
 +    <div class="gh-inner">
++      <h1>Hello from MVST</h1>
 +        <section class="gh-topic gh-topic-grid">
 +            <h2 class="gh-topic-name">
 +                {{#match pagination.pages ">" 1}}
@@ -8607,10 +8579,10 @@ index 0000000..623fe39
 +}
 diff --git a/node_modules/ghost/content/themes/mvst/assets/css/screen.css b/node_modules/ghost/content/themes/mvst/assets/css/screen.css
 new file mode 100644
-index 0000000..d26a185
+index 0000000..d258b5a
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/assets/css/screen.css
-@@ -0,0 +1,935 @@
+@@ -0,0 +1,938 @@
 +@import "@tryghost/shared-theme-assets/assets/css/screen.css";
 +@import "fonts.css";
 +
@@ -8627,7 +8599,10 @@ index 0000000..d26a185
 +  position: relative;
 +  font-size: 16px;
 +}
-+
++.gh-home-title {
++  color:  red;
++  margin-bottom: 1.5rem;
++}
 +.language-selector .language {
 +  display: flex;
 +  flex-direction: row;
@@ -9548,88 +9523,67 @@ index 0000000..d26a185
 +}
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-500.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-500.woff
 new file mode 100644
-index 0000000..19c7bf8
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-500.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-500.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-500.woff2
 new file mode 100644
-index 0000000..6fc94ad
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-500.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-600.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-600.woff
 new file mode 100644
-index 0000000..b606a87
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-600.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-600.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-600.woff2
 new file mode 100644
-index 0000000..bc76d10
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-600.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-700.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-700.woff
 new file mode 100644
-index 0000000..097e23e
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-700.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-700.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-700.woff2
 new file mode 100644
-index 0000000..8fcc432
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-700.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-regular.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-regular.woff
 new file mode 100644
-index 0000000..1866261
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-regular.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-regular.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-regular.woff2
 new file mode 100644
-index 0000000..c659f5e
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/inter-v12-latin-regular.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-500.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-500.woff
 new file mode 100644
-index 0000000..619fb31
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-500.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-500.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-500.woff2
 new file mode 100644
-index 0000000..e8712f1
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-500.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-600.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-600.woff
 new file mode 100644
-index 0000000..ab401cb
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-600.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-600.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-600.woff2
 new file mode 100644
-index 0000000..2270d92
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-600.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700.woff
 new file mode 100644
-index 0000000..eb11a80
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700.woff2
 new file mode 100644
-index 0000000..03dec52
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700italic.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700italic.woff
 new file mode 100644
-index 0000000..2235111
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700italic.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700italic.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700italic.woff2
 new file mode 100644
-index 0000000..7b00f85
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-700italic.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-italic.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-italic.woff
 new file mode 100644
-index 0000000..13e2696
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-italic.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-italic.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-italic.woff2
 new file mode 100644
-index 0000000..0d04921
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-italic.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-regular.woff b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-regular.woff
 new file mode 100644
-index 0000000..fa15419
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-regular.woff differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-regular.woff2 b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-regular.woff2
 new file mode 100644
-index 0000000..688eaad
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/fonts/lora-v25-latin-regular.woff2 differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/images/default-skin.png b/node_modules/ghost/content/themes/mvst/assets/images/default-skin.png
 new file mode 100755
-index 0000000..441c502
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/images/default-skin.png differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/images/default-skin.svg b/node_modules/ghost/content/themes/mvst/assets/images/default-skin.svg
 new file mode 100755
 index 0000000..9d5f0c6
@@ -9640,8 +9594,7 @@ index 0000000..9d5f0c6
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/assets/images/preloader.gif b/node_modules/ghost/content/themes/mvst/assets/images/preloader.gif
 new file mode 100755
-index 0000000..b8faa69
-Binary files /dev/null and b/node_modules/ghost/content/themes/mvst/assets/images/preloader.gif differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/assets/js/main.js b/node_modules/ghost/content/themes/mvst/assets/js/main.js
 new file mode 100644
 index 0000000..aa17928
@@ -10525,14 +10478,15 @@ index 0000000..1d175f7
 +exports.default = series(build, serve, watcher);
 diff --git a/node_modules/ghost/content/themes/mvst/home.hbs b/node_modules/ghost/content/themes/mvst/home.hbs
 new file mode 100644
-index 0000000..f0b930b
+index 0000000..6118417
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/home.hbs
-@@ -0,0 +1,60 @@
+@@ -0,0 +1,61 @@
 +{{!< default}}
 +{{#contentFor "lang"}}en{{/contentFor}}
 +<main class="gh-main gh-outer">
 +    <div class="gh-inner">
++        <h1 class="gh-home-title">Welcome to MVST blog</h1>
 +        <section class="gh-topic gh-topic-grid">
 +            <h2 class="gh-topic-name">
 +                {{#match pagination.pages ">" 1}}
@@ -16777,6 +16731,62 @@ index 0000000..fdb548d
 +    archiver-utils "^2.1.0"
 +    compress-commons "^4.1.0"
 +    readable-stream "^3.6.0"
+diff --git a/node_modules/ghost/core/frontend/helpers/img_url.js b/node_modules/ghost/core/frontend/helpers/img_url.js
+index f1744fb..653723f 100644
+--- a/node_modules/ghost/core/frontend/helpers/img_url.js
++++ b/node_modules/ghost/core/frontend/helpers/img_url.js
+@@ -42,7 +42,7 @@ module.exports = function imgUrl(requestedImageUrl, options) {
+     // CASE: if you pass an external image, there is nothing we want to do to it!
+     const isInternalImage = detectInternalImage(requestedImageUrl);
+     if (!isInternalImage) {
+-        return requestedImageUrl;
++        return getExternalImage(requestedImageUrl, options);
+     }
+ 
+     const {requestedSize, imageSizes} = getImageSizeOptions(options);
+@@ -130,3 +130,41 @@ function getImageWithSize(imagePath, requestedSize, imageSizes) {
+ function prefixIfPresent(prefix, string) {
+     return string ? prefix + string : '';
+ }
++
++
++// Changes for CATEO
++function getExternalImage(requestedImageUrl, options) {
++    if (detectCloudinaryImage(requestedImageUrl)) {
++        return injectCloudinaryParameters(requestedImageUrl, options);
++    }
++
++    return requestedImageUrl;
++}
++
++function detectCloudinaryImage(requestedImageUrl) {
++    const cateoCloudinaryUrl ="https://res-3.cloudinary.com/hcx9j0y21/image/upload/q_auto/v1/ghost-blog-imges/";
++    return requestedImageUrl.startsWith(cateoCloudinaryUrl);
++}
++
++function injectCloudinaryParameters(requestedImageUrl, options) {
++
++    const {requestedSize, imageSizes} = getImageSizeOptions(options);
++    if (!requestedSize) {
++        return requestedImageUrl;
++    }
++
++    if (!imageSizes || !imageSizes[requestedSize]) {
++        return requestedImageUrl;
++    }
++
++    const {width, height} = imageSizes[requestedSize];
++
++    if (!width && !height) {
++        return requestedImageUrl;
++    }
++
++
++    const defaultParam = 'q_quto';
++    const newParams = `${defaultParam},w_${width},h_${height}`;
++    return requestedImageUrl.replace(defaultParam, newParams);
++}
+\ No newline at end of file
 diff --git a/node_modules/ghost/core/frontend/helpers/t.js b/node_modules/ghost/core/frontend/helpers/t.js
 index 8438481..765a636 100644
 --- a/node_modules/ghost/core/frontend/helpers/t.js
