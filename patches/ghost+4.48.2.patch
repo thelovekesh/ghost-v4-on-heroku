@@ -3,7 +3,7 @@ new file mode 100644
 index 0000000..e69de29
 diff --git a/node_modules/ghost/content/data/ghost-dev.db b/node_modules/ghost/content/data/ghost-dev.db
 new file mode 100644
-index 0000000..d73aeb4
+index 0000000..c46a1fc
 Binary files /dev/null and b/node_modules/ghost/content/data/ghost-dev.db differ
 diff --git a/node_modules/ghost/content/public/cards.min.css b/node_modules/ghost/content/public/cards.min.css
 new file mode 100644
@@ -16736,7 +16736,7 @@ index 0000000..fdb548d
 +    compress-commons "^4.1.0"
 +    readable-stream "^3.6.0"
 diff --git a/node_modules/ghost/core/frontend/helpers/img_url.js b/node_modules/ghost/core/frontend/helpers/img_url.js
-index f1744fb..0b51dd6 100644
+index f1744fb..35b3800 100644
 --- a/node_modules/ghost/core/frontend/helpers/img_url.js
 +++ b/node_modules/ghost/core/frontend/helpers/img_url.js
 @@ -42,7 +42,7 @@ module.exports = function imgUrl(requestedImageUrl, options) {
@@ -16764,8 +16764,8 @@ index f1744fb..0b51dd6 100644
 +}
 +
 +function detectCloudinaryImage(requestedImageUrl) {
-+    const cateoCloudinaryUrl ="https://res-3.cloudinary.com/hcx9j0y21/image/upload/q_auto/v1/ghost-blog-images/";
-+    return requestedImageUrl.startsWith(cateoCloudinaryUrl);
++    const cateoCloudinaryUrl ="cloudinary.com/hcx9j0y21/image/upload/q_auto";
++    return requestedImageUrl.includes(cateoCloudinaryUrl);
 +}
 +
 +function injectCloudinaryParameters(requestedImageUrl, options) {
