@@ -41,40 +41,10 @@
                 </nav>
 
                 <div class="gh-head-actions">
-                    <a href="https://mvst.co{{t 'local'}}services">{{t "Services"}}</a>
-                    <a href="https://mvst.co{{t 'local'}}{{t 'our-work'}}">{{t "Work"}}</a>
-                    <a href="https://blog.mvst.co{{ t 'local'}}">Blog</a>
-                    <a href="https://mvst.co{{t 'local'}}{{t 'career'}}">{{t "Career"}}</a>
-                    <a href="https://mvst.co{{t 'local'}}{{t 'about-us'}}">{{t "About"}}</a>
-                        <div class="language-selector" id="language-selector-english">
-                            <a class="language">
-                                <p>🇬🇧 <span class="ifsmall">English</span></p>
-                                <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
-                            </a>
-                            <div class="overlay invisible" id="overlay-english">
-
-                            </div>
-                            <div class="options invisible" id="options-english">
-                                <a>🇬🇧  English  <svg width="14" height="14" viewBox="0 0 14 14" focusable="false" class="chakra-icon css-1jgm6rx"><g fill="currentColor"><polygon points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"></polygon></g></svg></a>
-                                <div class="divider"></div>
-                                <a href="https://blog.mvst.co/de">🇩🇪  German</a>
-                            </div>
-                        </div>
-                        <div class="language-selector" id="language-selector-deutsch">
-                            <a class="language">
-                                <p>🇩🇪 <span class="ifsmall">Deutsch</span></p>
-                                <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
-                            </a>
-                            <div class="overlay invisible" id="overlay-deutsch">
-
-                            </div>
-                            <div class="options invisible" id="options-deutsch">
-                                <a>🇩🇪  Deutsch  <svg width="14" height="14" viewBox="0 0 14 14" focusable="false" class="chakra-icon css-1jgm6rx"><g fill="currentColor"><polygon points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"></polygon></g></svg></a>
-                                <div class="divider"></div>
-                                <a href="https://blog.mvst.co">🇬🇧  Englisch</a>
-                            </div>
-                        </div>
-                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://mvst.co{{t 'local'}}{{t "Contact"}}">{{t "Contact"}} 👋</a>
+                   <!-- English -->
+                   {{>  "navbar" }}
+                   <!-- German -->
+                   {{>  "denavbar" }}
                     <button class="gh-search gh-icon-btn hidden" data-ghost-search>{{> "icons/search"}}</button>
                     {{#unless @member}}
                         <a href="#/portal/signup" class="hidden" data-portal="signup">Subscribe</a>
@@ -93,13 +63,26 @@
             <div class="gh-foot-inner gh-inner">
                 {{^if @member.paid}}
                     <section class="gh-subscribe flex flex-row">
-                        <div class="flex flex-col">
-                            <h4 class="gh-subscribe-title">{{t "SubscribeTitle"}}</h3>
-                            <div class="gh-subscribe-description">{{t "SubscribeDescription"}}</div>
+                        <div class="flex flex-col english-only">
+                            <h4 class="gh-subscribe-title">
+                              We would love to be your partner.</h4>
+                            <div class="gh-subscribe-description">
+                              Let's build a great digital experience together.
+                            </div>
                         </div>
-                        <a class="gh-subscribe-btn gh-btn text-black" href="https://mvst.co/contact">{{t "Contact"}} 👋</a>
+                       <div class="flex flex-col german-only">
+                        <h4 class="gh-subscribe-title">
+                          Wir möchten gern dein Partner sein.
+                          </h4>
+
+                        <div class="gh-subscribe-description">
+                          Lass uns zusammen Großartiges schaffen.
+                        </div>
+                       </div>
+                        <a class="gh-subscribe-btn gh-btn text-black english-only" href="https://mvst.co/contact">Contact 👋</a>
+                        <a class="gh-subscribe-btn gh-btn text-black german-only" href="https://mvst.co/de/kontakte">Kontakte 👋</a>
                         {{^if @member}}
-                            <h4 class="gh-subscribe-title hidden">Subscribe to {{@site.title}}</h3>
+                            <h4 class="gh-subscribe-title hidden">Subscribe to {{@site.title}}</h4>
 
                             {{#if @custom.email_signup_text}}
                                 <div class="gh-subscribe-description hidden">{{@custom.email_signup_text}}</div>
@@ -117,13 +100,8 @@
                 {{/if}}
 
                 <nav class="gh-foot-menu">
-                    <ul class="nav">
-                        <li class="nav-services"><a href="https://mvst.co{{t 'local'}}services">{{t "Services"}}</a></li>
-                        <li class="nav-solutions"><a href="https://mvst.co{{t 'local'}}{{t 'our-work'}}">{{t "Work"}}</a></li>
-                        <li class="nav-about-us"><a href="https://mvst.co{{t 'local'}}{{t 'about-us'}}">{{t "About"}}</a></li>
-                        <li class="nav-about-us"><a href="https://mvst.co{{t 'local'}}{{t 'data-privacy'}}">{{t "Data"}}</a></li>
-                        <li class="nav-about-us"><a href="https://mvst.co{{t 'local'}}{{t 'imprint'}}">{{t "Imprint"}}</a></li>
-                    </ul>
+                  {{> "footernavbar"}}
+                  {{> "defooternavbar"}}
                 </nav>
 
                 <div class="gh-copyright" style="text-align:center">

@@ -12,10 +12,19 @@
     let hidden = true;
     let selectorEnglish = document.querySelector("#language-selector-english");
     let selectorDeutsch = document.querySelector("#language-selector-deutsch");
+    let englishContent = document.querySelectorAll('.english-only');
+    let germanContent = document.querySelectorAll('.german-only');
+    console.log(englishContent,germanContent)
     if (isDeutsch) {
         selectorEnglish.classList.add('invisible');
+        englishContent.forEach(function (element) {
+            element.remove();
+        })
     } else {
         selectorDeutsch.classList.add('invisible');
+        germanContent.forEach(function (element) {
+            element.remove();
+        })
     }
     let optionsDetusch = document.querySelector("#options-deutsch")
     let overlayDeutsch = document.querySelector("#overlay-deutsch");
