@@ -50,7 +50,7 @@ A more permanent solution would be to use a custom domain and verify your domain
 
 FYI: You can access mailgun dashboard by visiting heroku dashboard > click on your app > resources tab > click on mailgun addon.
 
-### Chnage Config Vars Value in Heroku
+### Change Config Vars Value in Heroku
 How can I change the value of `APP_PUBLIC_URL`, `MAILGUN_API_KEY`, `MAILGUN_DOMAIN`, `MAILGUN_PUBLIC_KEY`, `MAILGUN_SMTP_LOGIN`, `MYSQL_DATABASE_URL or JAWSDB_URL`, `S3_ACCESS_KEY_ID` ...etc?
 You cannot change the value in the `config.production.json` but you can change the values using the `Heroku CLI` or `Heroku Dashboard`.
 For more information read <a href="https://lovekesh.tech/how-to-create-update-and-delete-config-vars-in-the-heroku-app/" target="_blank">here</a>
