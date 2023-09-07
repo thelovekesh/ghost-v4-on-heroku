@@ -3,8 +3,7 @@ new file mode 100644
 index 0000000..e69de29
 diff --git a/node_modules/ghost/content/data/ghost-dev.db b/node_modules/ghost/content/data/ghost-dev.db
 new file mode 100644
-index 0000000..c46a1fc
-Binary files /dev/null and b/node_modules/ghost/content/data/ghost-dev.db differ
+index 0000000..e69de29
 diff --git a/node_modules/ghost/content/public/cards.min.css b/node_modules/ghost/content/public/cards.min.css
 new file mode 100644
 index 0000000..6ab2823
@@ -1362,7 +1361,7 @@ index 0000000..6c3944b
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/custom-full-feature-image.hbs b/node_modules/ghost/content/themes/headline/custom-full-feature-image.hbs
 new file mode 100644
-index 0000000..e4b21ae
+index 0000000..fdadbfa
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/custom-full-feature-image.hbs
 @@ -0,0 +1,49 @@
@@ -1373,7 +1372,7 @@ index 0000000..e4b21ae
 +        <section class="gh-cover loading gh-outer">
 +            <img
 +                class="gh-cover-image"
-+                srcset="{{img_url feature_image size="s"}} 200w,
++                srcset="{{img_url feature_image size="s"}} 300w,
 +                        {{img_url feature_image size="m"}} 720w,
 +                        {{img_url feature_image size="l"}} 960w,
 +                        {{img_url feature_image size="xl"}} 1200w,
@@ -1418,7 +1417,7 @@ index 0000000..e4b21ae
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/custom-german-post.hbs b/node_modules/ghost/content/themes/headline/custom-german-post.hbs
 new file mode 100644
-index 0000000..3d10245
+index 0000000..cd0064f
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/custom-german-post.hbs
 @@ -0,0 +1,50 @@
@@ -1444,7 +1443,7 @@ index 0000000..3d10245
 +                {{#if feature_image}}
 +                    <figure class="gh-article-image">
 +                        <img
-+                            srcset="{{img_url feature_image size="s"}} 200w,
++                            srcset="{{img_url feature_image size="s"}} 300w,
 +                                    {{img_url feature_image size="m"}} 720w,
 +                                    {{img_url feature_image size="l"}} 960w,
 +                                    {{img_url feature_image size="xl"}} 1200w,
@@ -1475,7 +1474,7 @@ index 0000000..3d10245
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/custom-wide-feature-image.hbs b/node_modules/ghost/content/themes/headline/custom-wide-feature-image.hbs
 new file mode 100644
-index 0000000..195d3d2
+index 0000000..417c448
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/custom-wide-feature-image.hbs
 @@ -0,0 +1,47 @@
@@ -1500,7 +1499,7 @@ index 0000000..195d3d2
 +                {{#if feature_image}}
 +                    <figure class="gh-article-image">
 +                        <img
-+                            srcset="{{img_url feature_image size="s"}} 200w,
++                            srcset="{{img_url feature_image size="s"}} 300w,
 +                                    {{img_url feature_image size="m"}} 720w,
 +                                    {{img_url feature_image size="l"}} 960w,
 +                                    {{img_url feature_image size="xl"}} 1200w,
@@ -1676,7 +1675,7 @@ index 0000000..f0f4e77
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/default.hbs b/node_modules/ghost/content/themes/headline/default.hbs
 new file mode 100644
-index 0000000..a906ec9
+index 0000000..b0026df
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/default.hbs
 @@ -0,0 +1,152 @@
@@ -1737,7 +1736,7 @@ index 0000000..a906ec9
 +
 +                            </div>
 +                            <div class="options invisible" id="options-english">
-+                                <a>🇬🇧  English  <svg width="14" height="14" viewBox="0 0 14 14" focusable="false" class="chakra-icon css-1jgm6rx"><g fill="currentColor"><polygon points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"></polygon></g></svg></a>
++                                <p>🇬🇧  English  <svg width="14" height="14" viewBox="0 0 14 14" focusable="false" class="chakra-icon css-1jgm6rx"><g fill="currentColor"><polygon points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"></polygon></g></svg></p>
 +                                <div class="divider"></div>
 +                                <a href="https://blog.mvst.co/de">🇩🇪  German</a>
 +                            </div>
@@ -1751,7 +1750,7 @@ index 0000000..a906ec9
 +
 +                            </div>
 +                            <div class="options invisible" id="options-deutsch">
-+                                <a>🇩🇪  Deutsch  <svg width="14" height="14" viewBox="0 0 14 14" focusable="false" class="chakra-icon css-1jgm6rx"><g fill="currentColor"><polygon points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"></polygon></g></svg></a>
++                                <p>🇩🇪  Deutsch  <svg width="14" height="14" viewBox="0 0 14 14" focusable="false" class="chakra-icon css-1jgm6rx"><g fill="currentColor"><polygon points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"></polygon></g></svg></p>
 +                                <div class="divider"></div>
 +                                <a href="https://blog.mvst.co">🇬🇧  Englisch</a>
 +                            </div>
@@ -1925,7 +1924,7 @@ index 0000000..c16e068
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/depost.hbs b/node_modules/ghost/content/themes/headline/depost.hbs
 new file mode 100644
-index 0000000..10606d4
+index 0000000..6d0c5ab
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/depost.hbs
 @@ -0,0 +1,56 @@
@@ -1957,7 +1956,7 @@ index 0000000..10606d4
 +                {{#if feature_image}}
 +                    <figure class="gh-article-image">
 +                        <img
-+                            srcset="{{img_url feature_image size="s"}} 200w,
++                            srcset="{{img_url feature_image size="s"}} 300w,
 +                                    {{img_url feature_image size="m"}} 720w,
 +                                    {{img_url feature_image size="l"}} 960w,
 +                                    {{img_url feature_image size="xl"}} 1200w,
@@ -1988,7 +1987,7 @@ index 0000000..10606d4
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/detag.hbs b/node_modules/ghost/content/themes/headline/detag.hbs
 new file mode 100644
-index 0000000..e8d65da
+index 0000000..d7de512
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/detag.hbs
 @@ -0,0 +1,55 @@
@@ -1999,7 +1998,7 @@ index 0000000..e8d65da
 +        <section class="gh-cover gh-outer">
 +            <img
 +                class="gh-cover-image"
-+                srcset="{{img_url feature_image size="s"}} 200w,
++                srcset="{{img_url feature_image size="s"}} 300w,
 +                        {{img_url feature_image size="m"}} 720w,
 +                        {{img_url feature_image size="l"}} 960w,
 +                        {{img_url feature_image size="xl"}} 1200w,
@@ -2145,21 +2144,15 @@ index 0000000..1d175f7
 +exports.default = series(build, serve, watcher);
 diff --git a/node_modules/ghost/content/themes/headline/home.hbs b/node_modules/ghost/content/themes/headline/home.hbs
 new file mode 100644
-index 0000000..d287d9f
+index 0000000..f0b930b
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/home.hbs
-@@ -0,0 +1,66 @@
+@@ -0,0 +1,60 @@
 +{{!< default}}
 +{{#contentFor "lang"}}en{{/contentFor}}
 +<main class="gh-main gh-outer">
 +    <div class="gh-inner">
-+      <section style="height: 30vh;display: flex;align-items: center;justify-content: center;flex-direction: column">
-+        <h1>MVST Blog</h1>
-+        <br/>
-+        <h2>Latest News about Development, Design, Startup Culture and more</h2>
-+      </section>
-+
-+      <section class="gh-topic gh-topic-grid">
++        <section class="gh-topic gh-topic-grid">
 +            <h2 class="gh-topic-name">
 +                {{#match pagination.pages ">" 1}}
 +                    <a href="{{@site.url}}/page/2">Latest</a>
@@ -2422,14 +2415,14 @@ new file mode 100644
 index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/headline/partials/feature-image.hbs b/node_modules/ghost/content/themes/headline/partials/feature-image.hbs
 new file mode 100644
-index 0000000..b0737a0
+index 0000000..2dc4f73
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/partials/feature-image.hbs
 @@ -0,0 +1,17 @@
 +{{#if feature_image}}
 +    <figure class="gh-article-image">
 +        <img
-+            srcset="{{img_url feature_image size="s"}} 200w,
++            srcset="{{img_url feature_image size="s"}} 300w,
 +                    {{img_url feature_image size="m"}} 720w,
 +                    {{img_url feature_image size="l"}} 960w,
 +                    {{img_url feature_image size="xl"}} 1200w,
@@ -2480,7 +2473,7 @@ index 0000000..369d7f9
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/partials/loop-grid-de.hbs b/node_modules/ghost/content/themes/headline/partials/loop-grid-de.hbs
 new file mode 100644
-index 0000000..df7dc0f
+index 0000000..06e4f0d
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/partials/loop-grid-de.hbs
 @@ -0,0 +1,39 @@
@@ -2489,7 +2482,7 @@ index 0000000..df7dc0f
 +        {{#if feature_image}}
 +            <figure class="gh-card-image">
 +                <img
-+                    srcset="{{img_url feature_image size="s"}} 200w,
++                    srcset="{{img_url feature_image size="s"}} 300w,
 +                            {{img_url feature_image size="m"}} 720w,
 +                            {{img_url feature_image size="l"}} 960w,
 +                            {{img_url feature_image size="xl"}} 1200w,
@@ -2526,7 +2519,7 @@ index 0000000..df7dc0f
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/partials/loop-grid.hbs b/node_modules/ghost/content/themes/headline/partials/loop-grid.hbs
 new file mode 100644
-index 0000000..97514cb
+index 0000000..b7e714c
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/partials/loop-grid.hbs
 @@ -0,0 +1,33 @@
@@ -2535,7 +2528,7 @@ index 0000000..97514cb
 +        {{#if feature_image}}
 +            <figure class="gh-card-image">
 +                <img
-+                    srcset="{{img_url feature_image size="s"}} 200w,
++                    srcset="{{img_url feature_image size="s"}} 300w,
 +                            {{img_url feature_image size="m"}} 720w,
 +                            {{img_url feature_image size="l"}} 960w,
 +                            {{img_url feature_image size="xl"}} 1200w,
@@ -2806,7 +2799,7 @@ index 0000000..4bbbc04
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/post.hbs b/node_modules/ghost/content/themes/headline/post.hbs
 new file mode 100644
-index 0000000..d9d2b03
+index 0000000..0702aec
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/post.hbs
 @@ -0,0 +1,55 @@
@@ -2837,7 +2830,7 @@ index 0000000..d9d2b03
 +                {{#if feature_image}}
 +                    <figure class="gh-article-image">
 +                        <img
-+                            srcset="{{img_url feature_image size="s"}} 200w,
++                            srcset="{{img_url feature_image size="s"}} 300w,
 +                                    {{img_url feature_image size="m"}} 720w,
 +                                    {{img_url feature_image size="l"}} 960w,
 +                                    {{img_url feature_image size="xl"}} 1200w,
@@ -2868,7 +2861,7 @@ index 0000000..d9d2b03
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/tag.hbs b/node_modules/ghost/content/themes/headline/tag.hbs
 new file mode 100644
-index 0000000..c21c32c
+index 0000000..8980fc2
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/tag.hbs
 @@ -0,0 +1,54 @@
@@ -2879,7 +2872,7 @@ index 0000000..c21c32c
 +        <section class="gh-cover gh-outer">
 +            <img
 +                class="gh-cover-image"
-+                srcset="{{img_url feature_image size="s"}} 200w,
++                srcset="{{img_url feature_image size="s"}} 300w,
 +                        {{img_url feature_image size="m"}} 720w,
 +                        {{img_url feature_image size="l"}} 960w,
 +                        {{img_url feature_image size="xl"}} 1200w,
@@ -8584,10 +8577,10 @@ index 0000000..623fe39
 +}
 diff --git a/node_modules/ghost/content/themes/mvst/assets/css/screen.css b/node_modules/ghost/content/themes/mvst/assets/css/screen.css
 new file mode 100644
-index 0000000..d258b5a
+index 0000000..d26a185
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/assets/css/screen.css
-@@ -0,0 +1,938 @@
+@@ -0,0 +1,935 @@
 +@import "@tryghost/shared-theme-assets/assets/css/screen.css";
 +@import "fonts.css";
 +
@@ -8604,10 +8597,7 @@ index 0000000..d258b5a
 +  position: relative;
 +  font-size: 16px;
 +}
-+.gh-home-title {
-+  color:  red;
-+  margin-bottom: 1.5rem;
-+}
++
 +.language-selector .language {
 +  display: flex;
 +  flex-direction: row;
@@ -9704,7 +9694,7 @@ index 0000000..6c3944b
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/custom-full-feature-image.hbs b/node_modules/ghost/content/themes/mvst/custom-full-feature-image.hbs
 new file mode 100644
-index 0000000..e4b21ae
+index 0000000..fdadbfa
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/custom-full-feature-image.hbs
 @@ -0,0 +1,49 @@
@@ -9715,7 +9705,7 @@ index 0000000..e4b21ae
 +        <section class="gh-cover loading gh-outer">
 +            <img
 +                class="gh-cover-image"
-+                srcset="{{img_url feature_image size="s"}} 200w,
++                srcset="{{img_url feature_image size="s"}} 300w,
 +                        {{img_url feature_image size="m"}} 720w,
 +                        {{img_url feature_image size="l"}} 960w,
 +                        {{img_url feature_image size="xl"}} 1200w,
@@ -9760,7 +9750,7 @@ index 0000000..e4b21ae
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/custom-german-post.hbs b/node_modules/ghost/content/themes/mvst/custom-german-post.hbs
 new file mode 100644
-index 0000000..3d10245
+index 0000000..cd0064f
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/custom-german-post.hbs
 @@ -0,0 +1,50 @@
@@ -9786,7 +9776,7 @@ index 0000000..3d10245
 +                {{#if feature_image}}
 +                    <figure class="gh-article-image">
 +                        <img
-+                            srcset="{{img_url feature_image size="s"}} 200w,
++                            srcset="{{img_url feature_image size="s"}} 300w,
 +                                    {{img_url feature_image size="m"}} 720w,
 +                                    {{img_url feature_image size="l"}} 960w,
 +                                    {{img_url feature_image size="xl"}} 1200w,
@@ -9817,7 +9807,7 @@ index 0000000..3d10245
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/custom-wide-feature-image.hbs b/node_modules/ghost/content/themes/mvst/custom-wide-feature-image.hbs
 new file mode 100644
-index 0000000..195d3d2
+index 0000000..417c448
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/custom-wide-feature-image.hbs
 @@ -0,0 +1,47 @@
@@ -9842,7 +9832,7 @@ index 0000000..195d3d2
 +                {{#if feature_image}}
 +                    <figure class="gh-article-image">
 +                        <img
-+                            srcset="{{img_url feature_image size="s"}} 200w,
++                            srcset="{{img_url feature_image size="s"}} 300w,
 +                                    {{img_url feature_image size="m"}} 720w,
 +                                    {{img_url feature_image size="l"}} 960w,
 +                                    {{img_url feature_image size="xl"}} 1200w,
@@ -10263,7 +10253,7 @@ index 0000000..c16e068
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/depost.hbs b/node_modules/ghost/content/themes/mvst/depost.hbs
 new file mode 100644
-index 0000000..10606d4
+index 0000000..6d0c5ab
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/depost.hbs
 @@ -0,0 +1,56 @@
@@ -10295,7 +10285,7 @@ index 0000000..10606d4
 +                {{#if feature_image}}
 +                    <figure class="gh-article-image">
 +                        <img
-+                            srcset="{{img_url feature_image size="s"}} 200w,
++                            srcset="{{img_url feature_image size="s"}} 300w,
 +                                    {{img_url feature_image size="m"}} 720w,
 +                                    {{img_url feature_image size="l"}} 960w,
 +                                    {{img_url feature_image size="xl"}} 1200w,
@@ -10326,7 +10316,7 @@ index 0000000..10606d4
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/detag.hbs b/node_modules/ghost/content/themes/mvst/detag.hbs
 new file mode 100644
-index 0000000..e8d65da
+index 0000000..d7de512
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/detag.hbs
 @@ -0,0 +1,55 @@
@@ -10337,7 +10327,7 @@ index 0000000..e8d65da
 +        <section class="gh-cover gh-outer">
 +            <img
 +                class="gh-cover-image"
-+                srcset="{{img_url feature_image size="s"}} 200w,
++                srcset="{{img_url feature_image size="s"}} 300w,
 +                        {{img_url feature_image size="m"}} 720w,
 +                        {{img_url feature_image size="l"}} 960w,
 +                        {{img_url feature_image size="xl"}} 1200w,
@@ -10483,19 +10473,14 @@ index 0000000..1d175f7
 +exports.default = series(build, serve, watcher);
 diff --git a/node_modules/ghost/content/themes/mvst/home.hbs b/node_modules/ghost/content/themes/mvst/home.hbs
 new file mode 100644
-index 0000000..c3ab372
+index 0000000..f0b930b
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/home.hbs
-@@ -0,0 +1,65 @@
+@@ -0,0 +1,60 @@
 +{{!< default}}
 +{{#contentFor "lang"}}en{{/contentFor}}
 +<main class="gh-main gh-outer">
 +    <div class="gh-inner">
-+      <section style="height: 30vh;display: flex;align-items: center;justify-content: center;flex-direction: column">
-+       <h1>MVST Blog</h1>
-+        <br/>
-+        <h2>Latest News about Development, Design, Startup Culture and more</h2>
-+        </section>
 +        <section class="gh-topic gh-topic-grid">
 +            <h2 class="gh-topic-name">
 +                {{#match pagination.pages ">" 1}}
@@ -10759,14 +10744,14 @@ new file mode 100644
 index 0000000..e69de29
 diff --git a/node_modules/ghost/content/themes/mvst/partials/feature-image.hbs b/node_modules/ghost/content/themes/mvst/partials/feature-image.hbs
 new file mode 100644
-index 0000000..b0737a0
+index 0000000..2dc4f73
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/partials/feature-image.hbs
 @@ -0,0 +1,17 @@
 +{{#if feature_image}}
 +    <figure class="gh-article-image">
 +        <img
-+            srcset="{{img_url feature_image size="s"}} 200w,
++            srcset="{{img_url feature_image size="s"}} 300w,
 +                    {{img_url feature_image size="m"}} 720w,
 +                    {{img_url feature_image size="l"}} 960w,
 +                    {{img_url feature_image size="xl"}} 1200w,
@@ -10817,7 +10802,7 @@ index 0000000..369d7f9
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/partials/loop-grid-de.hbs b/node_modules/ghost/content/themes/mvst/partials/loop-grid-de.hbs
 new file mode 100644
-index 0000000..df7dc0f
+index 0000000..06e4f0d
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/partials/loop-grid-de.hbs
 @@ -0,0 +1,39 @@
@@ -10826,7 +10811,7 @@ index 0000000..df7dc0f
 +        {{#if feature_image}}
 +            <figure class="gh-card-image">
 +                <img
-+                    srcset="{{img_url feature_image size="s"}} 200w,
++                    srcset="{{img_url feature_image size="s"}} 300w,
 +                            {{img_url feature_image size="m"}} 720w,
 +                            {{img_url feature_image size="l"}} 960w,
 +                            {{img_url feature_image size="xl"}} 1200w,
@@ -10863,7 +10848,7 @@ index 0000000..df7dc0f
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/partials/loop-grid.hbs b/node_modules/ghost/content/themes/mvst/partials/loop-grid.hbs
 new file mode 100644
-index 0000000..df7dc0f
+index 0000000..06e4f0d
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/partials/loop-grid.hbs
 @@ -0,0 +1,39 @@
@@ -10872,7 +10857,7 @@ index 0000000..df7dc0f
 +        {{#if feature_image}}
 +            <figure class="gh-card-image">
 +                <img
-+                    srcset="{{img_url feature_image size="s"}} 200w,
++                    srcset="{{img_url feature_image size="s"}} 300w,
 +                            {{img_url feature_image size="m"}} 720w,
 +                            {{img_url feature_image size="l"}} 960w,
 +                            {{img_url feature_image size="xl"}} 1200w,
@@ -11145,7 +11130,7 @@ index 0000000..4bbbc04
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/post.hbs b/node_modules/ghost/content/themes/mvst/post.hbs
 new file mode 100644
-index 0000000..d9d2b03
+index 0000000..0702aec
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/post.hbs
 @@ -0,0 +1,55 @@
@@ -11176,7 +11161,7 @@ index 0000000..d9d2b03
 +                {{#if feature_image}}
 +                    <figure class="gh-article-image">
 +                        <img
-+                            srcset="{{img_url feature_image size="s"}} 200w,
++                            srcset="{{img_url feature_image size="s"}} 300w,
 +                                    {{img_url feature_image size="m"}} 720w,
 +                                    {{img_url feature_image size="l"}} 960w,
 +                                    {{img_url feature_image size="xl"}} 1200w,
@@ -11207,7 +11192,7 @@ index 0000000..d9d2b03
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/mvst/tag.hbs b/node_modules/ghost/content/themes/mvst/tag.hbs
 new file mode 100644
-index 0000000..c21c32c
+index 0000000..8980fc2
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/mvst/tag.hbs
 @@ -0,0 +1,54 @@
@@ -11218,7 +11203,7 @@ index 0000000..c21c32c
 +        <section class="gh-cover gh-outer">
 +            <img
 +                class="gh-cover-image"
-+                srcset="{{img_url feature_image size="s"}} 200w,
++                srcset="{{img_url feature_image size="s"}} 300w,
 +                        {{img_url feature_image size="m"}} 720w,
 +                        {{img_url feature_image size="l"}} 960w,
 +                        {{img_url feature_image size="xl"}} 1200w,
