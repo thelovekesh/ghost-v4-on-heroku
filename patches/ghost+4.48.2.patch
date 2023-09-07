@@ -1675,7 +1675,7 @@ index 0000000..f0f4e77
 \ No newline at end of file
 diff --git a/node_modules/ghost/content/themes/headline/default.hbs b/node_modules/ghost/content/themes/headline/default.hbs
 new file mode 100644
-index 0000000..b0026df
+index 0000000..f8104c1
 --- /dev/null
 +++ b/node_modules/ghost/content/themes/headline/default.hbs
 @@ -0,0 +1,152 @@
@@ -1728,10 +1728,10 @@ index 0000000..b0026df
 +                    <a href="https://mvst.co{{t 'local'}}{{t 'career'}}">{{t "Career"}}</a>
 +                    <a href="https://mvst.co{{t 'local'}}{{t 'about-us'}}">{{t "About"}}</a>
 +                        <div class="language-selector" id="language-selector-english">
-+                            <a class="language">
++                            <div class="language">
 +                                <p>🇬🇧 <span class="ifsmall">English</span></p>
 +                                <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
-+                            </a>
++                            </div>
 +                            <div class="overlay invisible" id="overlay-english">
 +
 +                            </div>
@@ -1742,10 +1742,10 @@ index 0000000..b0026df
 +                            </div>
 +                        </div>
 +                        <div class="language-selector" id="language-selector-deutsch">
-+                            <a class="language">
++                            <div class="language">
 +                                <p>🇩🇪 <span class="ifsmall">Deutsch</span></p>
 +                                <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
-+                            </a>
++                            </div>
 +                            <div class="overlay invisible" id="overlay-deutsch">
 +
 +                            </div>
